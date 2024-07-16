@@ -1,0 +1,337 @@
+object ViewStep: TViewStep
+  Size.Width = 664.000000000000000000
+  Size.Height = 60.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object recBase: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 664.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claWhite
+    object layDadosEmpresa: TLayout
+      Align = Left
+      Locked = True
+      Size.Width = 200.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object layDescricaoDadosEmpresa: TLayout
+        Align = Client
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Right = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Size.Width = 150.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object recProgressDadosEmpresa: TRectangle
+          Align = Center
+          Size.Width = 20.000000000000000000
+          Size.Height = 4.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object layCircleDadosEmpresa: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object circleDadosEmpresa: TCircle
+          Align = Client
+          Fill.Color = xFFF0F0F0
+          Size.Width = 50.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object imgCircleDadosEmpresa: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01B749444154785EEDD6E12A445114C5F1791F4912429A340921495ED2FB4892
+                  10D2A44908C998B1B6B38E9C3D83211FCE3D77FD6A8A7BF7B9EDFF9D92868888
+                  8888888888885448BFDFDFE58FF5D3EBF576F0024CFD5E02E2B7BBDDEE2B5F80
+                  A9CF4B40FC16E25F18FE59F92F01F19B887F66B0B7C7B132217E1DF14F8CF58A
+                  8F5F43FC0363BDE2E357107FCF58AFF8F865C4DF32D62B3EBE85F81BC67AC5C7
+                  2F21BEC358AFF8F826E2AF19EBE5178FA5FEED1F10C42F22BE1D5A07E4196F9B
+                  61F16D5EFA333C6301F157F6BC21F28D3758FC05011BBCF56B383B87675CF271
+                  5EDEF111021E11B2CA9191E1CC2CCE9EF3315E9E7FF06CB1B05F0A2177086A71
+                  EC47989DC699331EF7F28C8F6CC1B0670A411D843539F6258C4E61F6249C1A90
+                  777C648B867D53086BE325CC736C00EE4D62E698E35E35E2235B38EC9D42E005
+                  426738F601D72670EF88635EB5E2235B3CEC9F42E8A97DDB1CB3F8715C3BE46D
+                  AF9AF19105848E947DDB168ECF187E3EE065AFDAF19185849E9485E3B3CF5FBD
+                  32E2230B0A5D23292B3EB2B0D0F7AD32E3230B0C9D43951D1F5968E84DD4233E
+                  B2E0D0FDAE5EF19185D7365E4444444444444444B2D268BC01DF382F725E6DB4
+                  CF0000000049454E44AE426082}
+                FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\check.png'
+              end>
+            Align = Center
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object lblDadosEmpresa: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 43.000000000000000000
+        Size.Width = 200.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 8.000000000000000000
+        TextSettings.Trimming = None
+        Text = 'Dados da empresa'
+        TabOrder = 0
+      end
+    end
+    object layEnderecoEmpresa: TLayout
+      Align = Left
+      Locked = True
+      Position.X = 200.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object layDescricaoEnderecoEmpresa: TLayout
+        Align = Client
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Size.Width = 150.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object recProgressEnderecoEmpresa: TRectangle
+          Align = Center
+          Size.Width = 20.000000000000000000
+          Size.Height = 4.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object layCircleDescricaoEnderecoEmpresa: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object CircleEnderecoEmpresa: TCircle
+          Align = Client
+          Fill.Color = xFFF0F0F0
+          Size.Width = 50.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object imgEnderecoEmpresa: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01B749444154785EEDD6E12A445114C5F1791F4912429A340921495ED2FB4892
+                  10D2A44908C998B1B6B38E9C3D83211FCE3D77FD6A8A7BF7B9EDFF9D92868888
+                  8888888888885448BFDFDFE58FF5D3EBF576F0024CFD5E02E2B7BBDDEE2B5F80
+                  A9CF4B40FC16E25F18FE59F92F01F19B887F66B0B7C7B132217E1DF14F8CF58A
+                  8F5F43FC0363BDE2E357107FCF58AFF8F865C4DF32D62B3EBE85F81BC67AC5C7
+                  2F21BEC358AFF8F826E2AF19EBE5178FA5FEED1F10C42F22BE1D5A07E4196F9B
+                  61F16D5EFA333C6301F157F6BC21F28D3758FC05011BBCF56B383B87675CF271
+                  5EDEF111021E11B2CA9191E1CC2CCE9EF3315E9E7FF06CB1B05F0A2177086A71
+                  EC47989DC699331EF7F28C8F6CC1B0670A411D843539F6258C4E61F6249C1A90
+                  777C648B867D53086BE325CC736C00EE4D62E698E35E35E2235B38EC9D42E005
+                  426738F601D72670EF88635EB5E2235B3CEC9F42E8A97DDB1CB3F8715C3BE46D
+                  AF9AF19105848E947DDB168ECF187E3EE065AFDAF19185849E9485E3B3CF5FBD
+                  32E2230B0A5D23292B3EB2B0D0F7AD32E3230B0C9D43951D1F5968E84DD4233E
+                  B2E0D0FDAE5EF19185D7365E4444444444444444B2D268BC01DF382F725E6DB4
+                  CF0000000049454E44AE426082}
+                FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\check.png'
+              end>
+            Align = Center
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object lblEnderecoEmpresa: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 43.000000000000000000
+        Size.Width = 200.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 8.000000000000000000
+        TextSettings.Trimming = None
+        Text = 'Endere'#231'o da empresa'
+        TabOrder = 0
+      end
+    end
+    object layDadosAcesso: TLayout
+      Align = Left
+      Locked = True
+      Position.X = 400.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object layDescricaoDadosAcesso: TLayout
+        Align = Client
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Size.Width = 150.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object recProgressDadosAcesso: TRectangle
+          Align = Center
+          Size.Width = 20.000000000000000000
+          Size.Height = 4.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object layCircleDadosAcesso: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object CircleDadosAcesso: TCircle
+          Align = Left
+          Fill.Color = xFFF0F0F0
+          Size.Width = 50.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object imgDadosAcesso: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01B749444154785EEDD6E12A445114C5F1791F4912429A340921495ED2FB4892
+                  10D2A44908C998B1B6B38E9C3D83211FCE3D77FD6A8A7BF7B9EDFF9D92868888
+                  8888888888885448BFDFDFE58FF5D3EBF576F0024CFD5E02E2B7BBDDEE2B5F80
+                  A9CF4B40FC16E25F18FE59F92F01F19B887F66B0B7C7B132217E1DF14F8CF58A
+                  8F5F43FC0363BDE2E357107FCF58AFF8F865C4DF32D62B3EBE85F81BC67AC5C7
+                  2F21BEC358AFF8F826E2AF19EBE5178FA5FEED1F10C42F22BE1D5A07E4196F9B
+                  61F16D5EFA333C6301F157F6BC21F28D3758FC05011BBCF56B383B87675CF271
+                  5EDEF111021E11B2CA9191E1CC2CCE9EF3315E9E7FF06CB1B05F0A2177086A71
+                  EC47989DC699331EF7F28C8F6CC1B0670A411D843539F6258C4E61F6249C1A90
+                  777C648B867D53086BE325CC736C00EE4D62E698E35E35E2235B38EC9D42E005
+                  426738F601D72670EF88635EB5E2235B3CEC9F42E8A97DDB1CB3F8715C3BE46D
+                  AF9AF19105848E947DDB168ECF187E3EE065AFDAF19185849E9485E3B3CF5FBD
+                  32E2230B0A5D23292B3EB2B0D0F7AD32E3230B0C9D43951D1F5968E84DD4233E
+                  B2E0D0FDAE5EF19185D7365E4444444444444444B2D268BC01DF382F725E6DB4
+                  CF0000000049454E44AE426082}
+                FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\check.png'
+              end>
+            Align = Center
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object lblDadosAcesso: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 43.000000000000000000
+        Size.Width = 200.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 8.000000000000000000
+        TextSettings.Trimming = None
+        Text = 'Dados de acesso'
+        TabOrder = 0
+      end
+    end
+    object layFinal: TLayout
+      Align = Left
+      Locked = True
+      Position.X = 600.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 43.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 8.000000000000000000
+        TextSettings.Trimming = None
+        Text = 'Concluido'
+        TabOrder = 0
+      end
+      object Layout1: TLayout
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object CircleFinal: TCircle
+          Align = Client
+          Fill.Color = xFFF0F0F0
+          Size.Width = 50.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image1: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01B749444154785EEDD6E12A445114C5F1791F4912429A340921495ED2FB4892
+                  10D2A44908C998B1B6B38E9C3D83211FCE3D77FD6A8A7BF7B9EDFF9D92868888
+                  8888888888885448BFDFDFE58FF5D3EBF576F0024CFD5E02E2B7BBDDEE2B5F80
+                  A9CF4B40FC16E25F18FE59F92F01F19B887F66B0B7C7B132217E1DF14F8CF58A
+                  8F5F43FC0363BDE2E357107FCF58AFF8F865C4DF32D62B3EBE85F81BC67AC5C7
+                  2F21BEC358AFF8F826E2AF19EBE5178FA5FEED1F10C42F22BE1D5A07E4196F9B
+                  61F16D5EFA333C6301F157F6BC21F28D3758FC05011BBCF56B383B87675CF271
+                  5EDEF111021E11B2CA9191E1CC2CCE9EF3315E9E7FF06CB1B05F0A2177086A71
+                  EC47989DC699331EF7F28C8F6CC1B0670A411D843539F6258C4E61F6249C1A90
+                  777C648B867D53086BE325CC736C00EE4D62E698E35E35E2235B38EC9D42E005
+                  426738F601D72670EF88635EB5E2235B3CEC9F42E8A97DDB1CB3F8715C3BE46D
+                  AF9AF19105848E947DDB168ECF187E3EE065AFDAF19185849E9485E3B3CF5FBD
+                  32E2230B0A5D23292B3EB2B0D0F7AD32E3230B0C9D43951D1F5968E84DD4233E
+                  B2E0D0FDAE5EF19185D7365E4444444444444444B2D268BC01DF382F725E6DB4
+                  CF0000000049454E44AE426082}
+                FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\check.png'
+              end>
+            Align = Center
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+  end
+end

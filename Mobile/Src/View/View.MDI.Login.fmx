@@ -1,0 +1,22 @@
+object ViewMDILogin: TViewMDILogin
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = Single
+  ClientHeight = 564
+  ClientWidth = 312
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object layView: TLayout
+    Align = Contents
+    Size.Width = 312.000000000000000000
+    Size.Height = 564.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

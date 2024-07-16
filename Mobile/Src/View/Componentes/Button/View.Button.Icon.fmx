@@ -1,0 +1,32 @@
+inherited ViewButtonIcon: TViewButtonIcon
+  inherited Rectangle1: TRectangle
+    inherited Label1: TLabel
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      object Image1: TImage
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0084494441545847EDD5CB0980301004D060059690CE2CC1D22CC1122CC112F4
+              1AF2596743BC2BA80B32EFB2A0871993051D11D15D22E24B290366DF1E7D2BC6
+              B8225C524A8B49899CF3AC0594490904FAF314144BD406C012B5016049A7F6EA
+              92AECD27ED6DBE0F1F6C7705086278F5F9E69B86AB10C26616AE10AABFE3D124
+              9C887EC8B90303E116A3CAD018700000000049454E44AE426082}
+            FileName = 
+              'C:\WkTechnology\Fabrica-Adilson-Mobile\Src\Asserts\Icones\'#55358#56710' ico' +
+              'n _navigate next_.png'
+          end>
+        Align = Left
+        Locked = True
+        HitTest = False
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

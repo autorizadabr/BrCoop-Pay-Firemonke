@@ -1,0 +1,55 @@
+object FrameItemCategoria: TFrameItemCategoria
+  OnTap = FrameTap
+  Align = Top
+  Size.Width = 320.000000000000000000
+  Size.Height = 60.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object Layout1: TLayout
+    Align = Client
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recBase: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      HitTest = False
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 312.000000000000000000
+      Size.Height = 52.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFBDBDBD
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      object CircleImagem: TCircle
+        Align = Left
+        HitTest = False
+        Position.X = 5.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFC4C4C4
+      end
+      object lblDescricao: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 6.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        Text = 'Nome da Categoria Nome da Categoria Nome da Categoria'
+        TabOrder = 1
+      end
+    end
+  end
+end

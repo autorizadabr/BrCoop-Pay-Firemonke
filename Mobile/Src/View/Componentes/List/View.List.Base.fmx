@@ -1,0 +1,5 @@
+object ViewListBase: TViewListBase
+  Size.Width = 320.000000000000000000
+  Size.Height = 488.000000000000000000
+  Size.PlatformDefault = False
+end

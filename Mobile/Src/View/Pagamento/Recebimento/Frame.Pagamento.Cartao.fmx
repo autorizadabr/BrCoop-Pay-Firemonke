@@ -1,0 +1,151 @@
+object FramePagamentoCartao: TFramePagamentoCartao
+  Align = Contents
+  Size.Width = 320.000000000000000000
+  Size.Height = 654.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x787B7B7B
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 654.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object recPrincipal: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Size.Width = 290.000000000000000000
+      Size.Height = 415.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object layButtons: TLayout
+        Align = Bottom
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 355.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblCancelar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 167.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CANCELAR'
+          TabOrder = 0
+          OnClick = lblCancelarClick
+        end
+      end
+      object layContentTecladoQuantidade: TLayout
+        Align = Client
+        Size.Width = 262.000000000000000000
+        Size.Height = 315.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object layValoresQuantidade: TLayout
+          Align = Top
+          Size.Width = 262.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblValor: TLabel
+            Align = Client
+            StyledSettings = [Family, FontColor]
+            Size.Width = 262.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Selecione o tipo do cart'#227'o '
+            TabOrder = 0
+          end
+        end
+        object layClone: TLayout
+          Align = Top
+          HitTest = True
+          Padding.Top = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Top = 30.000000000000000000
+          Position.Y = 63.000000000000000000
+          Size.Width = 262.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnClick = layCloneClick
+          object imgCartao: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+            MultiResBitmap = <
+              item
+                Width = 96
+                Height = 96
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                  38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01FB49444154785EEDDC3D4A03411C86F199F50CEA09445050103BBD40AE207E
+                  20294CA567B14B8A45E25765AD27B0B3D04241F0008A77D871A37F1121EBCC18
+                  E4D5F8FC9A9D3192621F929DC0300E00000000000000008C3D6FD7645BED9D95
+                  E0FC5AA8DC9C2BC27CE1FCA4BDF42FD5F7E1C917E1263877EF2A7F7178D0BDB0
+                  97926405D86A7776EBCBFEDB0CC354CE9D1C95DD759B462507A86F7E1D19A9FA
+                  6537E9DE1676FDD246BB736C4324B26F8BA868A5CDED4ECB17EEDCA6C81256FB
+                  65EFD22643C53F014568D90899068B151B368A06A83F22B33644A6D795624434
+                  40A8FCA20D91AB5EA6DBA851F419105BFDA43EEDC7D5A8F7276915849F430031
+                  028811408C006204102380D8C8BF03F0357E07FC72041023801801C408204600
+                  31028811408C0062041023801801C408204600310288B12F6844EC0BFAE30820
+                  460031028811408C0062041023801801C40820460031028811408C0062041023
+                  801801C40820460031028811408C006204108BEEE9D9DCEE3CFAC24DDB14192A
+                  179E8FCADE944D878A7E02068792DA10B92A7F6BA346D1006170222CBEA5FEE6
+                  B8B361A3F833A0F25947F1E28377E1D4868D26ECDAE8E6FAEA61616979A67E58
+                  2CD89F9066AF5FF6CE6CDC2879632D8776E449DDB49CBC0CB537DC7B9BA1C9E0
+                  F0EE9C1DE3C9FFF88EE3EB3F1BF5F87A000000000000000030EE9C7B0111CC73
+                  BF1709E9930000000049454E44AE426082}
+                FileName = 
+                  'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\credit_card_24' +
+                  'dp_FILL0_wght400_GRAD0_opsz24.png'
+              end>
+            Align = Left
+            HitTest = False
+            Position.Y = 5.000000000000000000
+            Size.Width = 51.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object lblDescricao: TLabel
+            Align = Client
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 211.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF464646
+            Text = 'Cart'#227'o de cr'#233'dito'
+            TabOrder = 1
+          end
+        end
+        object ScrollBox: TScrollBox
+          Align = Client
+          Size.Width = 262.000000000000000000
+          Size.Height = 219.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Viewport.Width = 262.000000000000000000
+          Viewport.Height = 219.000000000000000000
+        end
+      end
+    end
+  end
+end

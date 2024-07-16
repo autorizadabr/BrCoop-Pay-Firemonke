@@ -1,0 +1,42 @@
+object ViewEditCodigo: TViewEditCodigo
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 51.000000000000000000
+  Size.Height = 46.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Client
+    Fill.Color = xFFCACACA
+    Locked = True
+    HitTest = False
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Size.Width = 43.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object lblNumber: TLabel
+      Align = Client
+      Locked = True
+      Size.Width = 39.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      TextSettings.Trimming = None
+      TabOrder = 1
+      object FloatAnimation1: TFloatAnimation
+        Duration = 0.500000000000000000
+        Loop = True
+        PropertyName = 'Opacity'
+        StartValue = 0.000000000000000000
+        StopValue = 1.000000000000000000
+      end
+    end
+  end
+end

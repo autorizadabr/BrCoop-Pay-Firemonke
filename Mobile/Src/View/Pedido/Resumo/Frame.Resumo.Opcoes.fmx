@@ -1,0 +1,119 @@
+object FrameResumoOpcoes: TFrameResumoOpcoes
+  Align = Contents
+  Size.Width = 472.000000000000000000
+  Size.Height = 530.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x14DFDFDF
+    Locked = True
+    Size.Width = 472.000000000000000000
+    Size.Height = 530.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    OnClick = recBaseClick
+    object recPrincipal: TRectangle
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Position.X = 174.000000000000000000
+      Position.Y = 172.000000000000000000
+      Size.Width = 147.000000000000000000
+      Size.Height = 245.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFC4C4C4
+      Stroke.Thickness = 1.200000047683716000
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object lblDesconto: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Margins.Top = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Desconto'
+        TabOrder = 4
+        OnClick = lblDescontoClick
+      end
+      object lblQuantidade: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Margins.Top = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Quantidade'
+        TabOrder = 2
+        OnClick = lblQuantidadeClick
+      end
+      object lblObservacao: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Margins.Top = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Observa'#231#227'o'
+        TabOrder = 1
+        OnClick = lblObservacaoClick
+      end
+      object lblDeletarItem: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFFF24747
+        Text = 'Deletar item'
+        TabOrder = 0
+        OnClick = lblDeletarItemClick
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.300000011920929000
+        ShadowColor = claBlack
+      end
+      object lblComanda: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        HitTest = True
+        Margins.Top = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Comanda'
+        TabOrder = 3
+        OnClick = lblComandaClick
+      end
+    end
+  end
+end

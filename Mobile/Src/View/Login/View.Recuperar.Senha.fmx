@@ -1,0 +1,114 @@
+inherited ViewRecuperarSenha: TViewRecuperarSenha
+  Caption = 'Recuperar Senha'
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 0
+  inherited layView: TLayout
+    inherited recPrincipal: TRectangle
+      Padding.Left = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 75.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF1F41BB
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'Recuperar Senha'
+        TabOrder = 0
+      end
+      object Layout1: TLayout
+        Align = Top
+        Margins.Top = 40.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 262.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        inline btnProsseguir: TViewButtonBase
+          Align = Client
+          Padding.Left = 4.000000000000000000
+          Padding.Top = 4.000000000000000000
+          Padding.Right = 4.000000000000000000
+          Padding.Bottom = 4.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 58.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = btnProsseguirClick
+          inherited Rectangle1: TRectangle
+            Size.Width = 292.000000000000000000
+            Size.Height = 50.000000000000000000
+            inherited Label1: TLabel
+              Size.Width = 292.000000000000000000
+              Size.Height = 50.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              Text = 'Prosseguir'
+            end
+          end
+        end
+      end
+      object Label14: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 30.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 147.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF494949
+        TextSettings.Trimming = None
+        Text = 'E-mail'
+        TabOrder = 2
+      end
+      inline edtEmail: TViewEditBase
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 164.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Fill.Color = xFFF1F4FF
+          Size.Width = 292.000000000000000000
+          inherited Edit: TEdit
+            KeyboardType = EmailAddress
+            Size.Width = 268.000000000000000000
+            TextPrompt = ''
+          end
+        end
+      end
+    end
+    inherited recDelete: TRectangle
+      OnTap = nil
+      OnClick = nil
+      inherited recBaseModalDelete: TRectangle
+        inherited layTitleModalDelete: TLayout
+          inherited imgCloseModal: TImage
+            OnTap = nil
+            OnClick = nil
+          end
+        end
+        inherited layContentTitleModalDelete: TLayout
+          inherited lblDescricaoModalDelete: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end

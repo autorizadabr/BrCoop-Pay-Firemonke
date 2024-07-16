@@ -1,0 +1,165 @@
+object FramePedidoComanda: TFramePedidoComanda
+  Size.Width = 320.000000000000000000
+  Size.Height = 563.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x787B7B7B
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 563.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object recPrincipal: TRectangle
+      Align = Scale
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Top = 14.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Position.X = 30.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 265.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object layButtons: TLayout
+        Align = Bottom
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 213.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblCancelar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 54.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CANCELAR'
+          TabOrder = 1
+          OnClick = lblCancelarClick
+        end
+        object lblConfirmar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 149.000000000000000000
+          Size.Width = 83.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CONFIRMAR'
+          TabOrder = 0
+          OnClick = lblConfirmarClick
+        end
+      end
+      object lblCaption: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family, FontColor]
+        Position.X = 14.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.WordWrap = False
+        Text = 'Comanda'
+        TabOrder = 1
+      end
+      inline edtNome: TViewEditBase
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 55.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 51.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Fill.Color = xFFF1F4FF
+          Size.Width = 224.000000000000000000
+          Size.Height = 43.000000000000000000
+          inherited Edit: TEdit
+            Size.Width = 200.000000000000000000
+            Size.Height = 39.000000000000000000
+            TextPrompt = ''
+          end
+        end
+      end
+      inline edtNumero: TViewEditBase
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 136.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 51.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Fill.Color = xFFF1F4FF
+          Size.Width = 224.000000000000000000
+          Size.Height = 43.000000000000000000
+          inherited Edit: TEdit
+            KeyboardType = PhonePad
+            TextSettings.HorzAlign = Center
+            Size.Width = 200.000000000000000000
+            Size.Height = 39.000000000000000000
+            TextPrompt = ''
+          end
+        end
+      end
+      object Label14: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 8.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF494949
+        TextSettings.Trimming = None
+        Text = 'Descri'#231#227'o'
+        TabOrder = 3
+      end
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 8.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 114.000000000000000000
+        Size.Width = 232.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF494949
+        TextSettings.Trimming = None
+        Text = 'N'#250'mero da comanda'
+        TabOrder = 2
+      end
+    end
+  end
+end

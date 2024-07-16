@@ -1,0 +1,184 @@
+inherited ViewNovaSenha: TViewNovaSenha
+  Caption = 'ViewBase2'
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  inherited layView: TLayout
+    inherited recPrincipal: TRectangle
+      Padding.Left = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      inline edtNovaSenha: TViewEditBase
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 164.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Fill.Color = xFFF1F4FF
+          Size.Width = 292.000000000000000000
+          Size.Height = 46.000000000000000000
+          inherited Edit: TEdit
+            Size.Width = 222.000000000000000000
+            TextPrompt = ''
+          end
+          inline ViewCensuraNovaSenha: TViewComponentesCensura
+            Align = Right
+            Position.X = 244.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 46.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            inherited imgVisible: TImage
+              MultiResBitmap.Height = 32
+              MultiResBitmap.Width = 32
+            end
+            inherited imgVisibleOff: TImage
+              MultiResBitmap.Height = 32
+              MultiResBitmap.Width = 32
+              Size.Height = 42.000000000000000000
+            end
+          end
+        end
+      end
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 75.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF1F41BB
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'Alterar Senha'
+        TabOrder = 0
+      end
+      object Layout1: TLayout
+        Align = Top
+        Margins.Top = 40.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 359.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        inline btnProsseguir: TViewButtonBase
+          Align = Client
+          Padding.Left = 4.000000000000000000
+          Padding.Top = 4.000000000000000000
+          Padding.Right = 4.000000000000000000
+          Padding.Bottom = 4.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 58.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = btnProsseguirClick
+          inherited Rectangle1: TRectangle
+            Size.Width = 292.000000000000000000
+            Size.Height = 50.000000000000000000
+            inherited Label1: TLabel
+              Size.Width = 292.000000000000000000
+              Size.Height = 50.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              Text = 'Alterar Senha'
+            end
+          end
+        end
+      end
+      inline edtConfirmarSenha: TViewEditBase
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 265.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Fill.Color = xFFF1F4FF
+          Size.Width = 292.000000000000000000
+          Size.Height = 46.000000000000000000
+          inherited Edit: TEdit
+            Size.Width = 222.000000000000000000
+            TextPrompt = ''
+          end
+          inline ViewCensuraConfirmarSenha: TViewComponentesCensura
+            Align = Right
+            Position.X = 244.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 46.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            inherited imgVisible: TImage
+              MultiResBitmap.Height = 32
+              MultiResBitmap.Width = 32
+            end
+            inherited imgVisibleOff: TImage
+              MultiResBitmap.Height = 32
+              MultiResBitmap.Width = 32
+              Size.Height = 42.000000000000000000
+            end
+          end
+        end
+      end
+      object Label14: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 30.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 147.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF494949
+        TextSettings.Trimming = None
+        Text = 'Nova Senha'
+        TabOrder = 3
+      end
+      object Label2: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 30.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 248.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF494949
+        TextSettings.Trimming = None
+        Text = 'Confirmar Senha'
+        TabOrder = 2
+      end
+    end
+    inherited recDelete: TRectangle
+      OnTap = nil
+      OnClick = nil
+      inherited recBaseModalDelete: TRectangle
+        inherited layTitleModalDelete: TLayout
+          inherited imgCloseModal: TImage
+            OnTap = nil
+            OnClick = nil
+          end
+        end
+        inherited layContentTitleModalDelete: TLayout
+          inherited lblDescricaoModalDelete: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,44 @@
+object ViewComponentesLoad: TViewComponentesLoad
+  Align = Contents
+  Locked = True
+  Size.Width = 320.000000000000000000
+  Size.Height = 578.000000000000000000
+  Size.PlatformDefault = False
+  Visible = False
+  object Rectangle1: TRectangle
+    Align = Contents
+    Fill.Color = xB4393939
+    Size.Width = 320.000000000000000000
+    Size.Height = 578.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object layCenter: TLayout
+    Align = Center
+    Size.Width = 174.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object AniIndicator: TAniIndicator
+      Align = Client
+      Locked = True
+      Size.Width = 174.000000000000000000
+      Size.Height = 53.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Align = Bottom
+      StyledSettings = [Family, Size, Style]
+      Margins.Top = 20.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      TextSettings.Trimming = None
+      Text = 'Carregando...'
+      TabOrder = 1
+    end
+  end
+end

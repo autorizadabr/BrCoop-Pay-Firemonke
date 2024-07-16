@@ -1,0 +1,41 @@
+inherited ViewEditComboBox: TViewEditComboBox
+  Size.Height = 45.000000000000000000
+  inherited recBase: TRectangle
+    Size.Height = 37.000000000000000000
+    inherited Edit: TEdit
+      OnTap = imgOpenCloseTap
+      ReadOnly = True
+      Size.Width = 408.000000000000000000
+      Size.Height = 33.000000000000000000
+      OnClick = imgOpenCloseClick
+    end
+    object imgOpenClose: TImage
+      OnTap = imgOpenCloseTap
+      MultiResBitmap.Height = 9
+      MultiResBitmap.Width = 13
+      MultiResBitmap = <
+        item
+          Width = 13
+          Height = 9
+          PNG = {
+            89504E470D0A1A0A0000000D494844520000000D000000090806000000E97AA6
+            6A000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0098494441542853858ECB15C220104507B4004B929D652415980EF874900EEC
+            C443272981AD1BF04D1C12C473CCDDCC9B0709571170CEDD312E9C0F48B83B9F
+            399552F863C7F91FB837F15C5F62F08727CAABAC3FE0EC11421839EBB50128C7
+            9C7392F50BF48B52CACB4A279914634CC69817E2EDD3EC68AD27EF7D9475D7AB
+            F49AAD5665D3ABB49ABD5665D3ABB49ABDD621D6DA416207D11BECB94B08A98C
+            0F200000000049454E44AE426082}
+          FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\Polygon.png'
+        end>
+      Align = Right
+      Position.X = 430.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+      OnClick = imgOpenCloseClick
+    end
+  end
+end

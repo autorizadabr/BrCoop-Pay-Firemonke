@@ -1,0 +1,177 @@
+inherited ViewVerificarConta: TViewVerificarConta
+  Caption = ''
+  ClientWidth = 367
+  DesignerMasterStyle = 3
+  inherited layView: TLayout
+    Size.Width = 367.000000000000000000
+    inherited recPrincipal: TRectangle
+      Size.Width = 367.000000000000000000
+      object Label6: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        HitTest = True
+        Margins.Top = 25.000000000000000000
+        Position.Y = 142.000000000000000000
+        Size.Width = 367.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = xFF949494
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'Enviamos um email'
+        TabOrder = 1
+      end
+      object Label7: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        HitTest = True
+        Position.Y = 159.000000000000000000
+        Size.Width = 367.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = xFF949494
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'com um c'#243'digo de verifica'#231#227'o'
+        TabOrder = 0
+      end
+      object layEditCodico: TLayout
+        Align = Top
+        Margins.Left = -20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = -20.000000000000000000
+        Position.X = -20.000000000000000000
+        Position.Y = 189.000000000000000000
+        Size.Width = 407.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        inline ViewEditSenha: TViewEditSenha
+          Align = Center
+          Size.Width = 313.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          inherited layEditCodico: TLayout
+            Size.Width = 313.000000000000000000
+            inherited EdtCodigo1: TViewEditCodigo
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited EdtCodigo5: TViewEditCodigo
+              Margins.Left = 1.000000000000000000
+              Position.X = 208.000000000000000000
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited EdtCodigo3: TViewEditCodigo
+              Margins.Left = 1.000000000000000000
+              Position.X = 104.000000000000000000
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited EdtCodigo2: TViewEditCodigo
+              Margins.Left = 1.000000000000000000
+              Position.X = 52.000000000000000000
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited EdtCodigo6: TViewEditCodigo
+              Margins.Left = 1.000000000000000000
+              Position.X = 260.000000000000000000
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited EdtCodigo4: TViewEditCodigo
+              Margins.Left = 1.000000000000000000
+              Position.X = 156.000000000000000000
+              inherited recBase: TRectangle
+                Fill.Color = xFFF1F4FF
+              end
+            end
+            inherited Edit1: TEdit
+              Position.X = 500.000000000000000000
+            end
+          end
+        end
+      end
+      object Layout1: TLayout
+        Align = Top
+        Margins.Top = 30.000000000000000000
+        Position.Y = 269.000000000000000000
+        Size.Width = 367.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        inline btnProsseguir: TViewButtonBase
+          Align = Center
+          Padding.Left = 4.000000000000000000
+          Padding.Top = 4.000000000000000000
+          Padding.Right = 4.000000000000000000
+          Padding.Bottom = 4.000000000000000000
+          Size.Width = 222.000000000000000000
+          Size.Height = 46.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = btnProsseguirClick
+          inherited Rectangle1: TRectangle
+            Size.Height = 38.000000000000000000
+            inherited Label1: TLabel
+              Size.Height = 38.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              Text = 'Prosseguir'
+            end
+          end
+        end
+      end
+      object lblEmail: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Position.Y = 159.000000000000000000
+        Size.Width = 364.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 17.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF1F41BB
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'Email'
+        Visible = False
+        TabOrder = 2
+      end
+      object lblRecuperarSenha: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        HitTest = True
+        Margins.Top = 75.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 367.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF1F41BB
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 'Verificar Conta'
+        TabOrder = 3
+      end
+    end
+    inherited recDelete: TRectangle
+      inherited recBaseModalDelete: TRectangle
+        inherited layContentTitleModalDelete: TLayout
+          inherited lblDescricaoModalDelete: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end

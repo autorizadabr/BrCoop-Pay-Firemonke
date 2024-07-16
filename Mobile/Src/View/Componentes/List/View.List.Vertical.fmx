@@ -1,0 +1,12 @@
+inherited ViewListVertical: TViewListVertical
+  object ScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 488.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ShowScrollBars = False
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 488.000000000000000000
+  end
+end

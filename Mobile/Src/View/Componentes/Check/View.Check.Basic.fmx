@@ -1,0 +1,26 @@
+object ViewCheckBasic: TViewCheckBasic
+  OnTap = FrameTap
+  Size.Width = 40.000000000000000000
+  Size.Height = 40.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object recBase: TRectangle
+    Align = Scale
+    Fill.Color = claWhite
+    Locked = True
+    HitTest = False
+    Position.X = 1.999999761581421000
+    Position.Y = 2.000001430511475000
+    Size.Width = 35.000019073486330000
+    Size.Height = 35.000003814697270000
+    Size.PlatformDefault = False
+    Stroke.Color = claDarkgray
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+end

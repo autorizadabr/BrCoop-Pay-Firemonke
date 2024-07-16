@@ -1,0 +1,43 @@
+object FrameProdutoLista: TFrameProdutoLista
+  HitTest = False
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 405.000000000000000000
+  Size.Height = 57.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    HitTest = False
+    Padding.Left = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Sides = [Bottom]
+    Size.Width = 405.000000000000000000
+    Size.Height = 53.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFDFDFDF
+    Stroke.Thickness = 1.500000000000000000
+    object Circle: TCircle
+      Align = Left
+      Locked = True
+      HitTest = False
+      Margins.Top = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 55.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDADADA
+    end
+    object lblDescricao: TLabel
+      Align = Client
+      Locked = True
+      Margins.Left = 6.000000000000000000
+      Size.Width = 324.000000000000000000
+      Size.Height = 53.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblDescricao'
+      TabOrder = 1
+    end
+  end
+end

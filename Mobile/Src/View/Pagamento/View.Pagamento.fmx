@@ -1,0 +1,996 @@
+inherited ViewPagamento: TViewPagamento
+  Caption = ''
+  ClientHeight = 568
+  ClientWidth = 352
+  DesignerMasterStyle = 3
+  inherited layView: TLayout
+    Size.Width = 352.000000000000000000
+    Size.Height = 568.000000000000000000
+    inherited recPrincipal: TRectangle
+      Fill.Color = xFFF8F8F8
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 352.000000000000000000
+      Size.Height = 568.000000000000000000
+      inherited Circle5: TCircle
+        Visible = False
+      end
+      object recToolbar: TRectangle
+        Align = Top
+        Fill.Color = xFFF8F8F8
+        Sides = [Bottom]
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 1.500000000000000000
+        object Label4: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Margins.Left = 30.000000000000000000
+          Size.Width = 282.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 22.000000000000000000
+          Text = 'Pagamento'
+          TabOrder = 0
+        end
+        object imgVoltar: TImage
+          MultiResBitmap.Height = 96
+          MultiResBitmap.Width = 96
+          MultiResBitmap = <
+            item
+              Width = 96
+              Height = 96
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                062B49444154785EEDDB4D4C54571407F073EEBD33CC2003030C9F83807C583F
+                5050D326DD74DD98A8E9C255DB8490D85557EDAA9B2EFB91B4F66BE147A29150
+                932AB1B5B535A44993B2AA6DA2E8A0041485A10A54B4208330E3CC7BA7EFEA23
+                C191982E6478EF717E9B49DE1C32937BDEBDF7FFDE3C8031C618638C31C61863
+                8C31C618638C31C618638CB1170FED57D7D9BF7FBF0C8542F989448000A616BA
+                BBBB0DFB2D5711F6ABEBF843A1A60CA9CFF3D6191FFA0A0AEAECC3AE23ED5757
+                79B3FDC0CB12E4BB80997D02D5568192B6B7B44DC6627DF7EC12D770DD0C78BB
+                E39D5725627B1AC56E447F691A32FA249A15422D3CA970175735409FF948F096
+                89B4277117CA2943138A643701FDFEF061FE3F7699ABB86213D61BAE5EF325A9
+                F7D368ECF6A32ACB108E0BA05F4DC083F7C77DA33D3DDFA4EC7257717C03F4E0
+                5330581950C14F8401AFA3826283CC7120793E95313FEAEE3A7ADB2A339F54BB
+                8FE397207DE6EBC1C734EC898F0E965006260488D320C467DD0D55AE1E7CCDD1
+                33E071DA413C0026BEA107BFAEE9A5BF81E05BC818A717166607ADECFFC82E75
+                2DC73640A71DBDE15A69679F0FA8D21AF83BD6B7ED2448FF30353E3ED0D3D3E3
+                CA353F9B2397A0A56947A4121102336E259D93208C53C944E29A57065F73D40C
+                C84E3B22958C88BCC018923A97A2D49793232313BDBDBD19BBDC131CD380ECB4
+                03900C1B32104730CECEA5531F9FEDEAFAD72AA327D5DEE19825283BEDA00CC6
+                85B5E1FAC13CE8D5C1D71CD180C769C75A76F4993F363618AA6BD8344C261D93
+                0427138984BEC2F5E4E06BABBE043D95768C850A92C11104F3181AF0E3E8E8D0
+                B0D7D6FC6CAB3A0396A69D79A45220FF4D6BF04F4892DDF3F3D337BC3EF8DAAA
+                CC80ECB4330FAA344C709390CE507AE1EBAEAEAE69ABCCD557B8FF57CE1BB05C
+                DA01CCBB01429C4263E1D3CECECEA45DBA26E47C09CA4E3B8F071FF0B835F85F
+                ADB5C1D772DA80ECB453DBB8F91A0A386428E33B6BF01FD8656B4ACE96A0ECB4
+                63CD85414071C43AF67367E791B855E2D9A8F93C3969807D57B3FDF1BD1D3023
+                48EA16219C23A03398C109A5D28E1E7CEB5AE4DE4ADD795DD10664A71D3FFAA2
+                49A29980097F599FFC9BD50447DF5443A28CF53D07C1485DB496C819FBF00BB5
+                A20DE8E8E808A5417E21C0D803E82FB70FBB863E59FC02DA453AD9BB520D70CC
+                BDA0B58A97A0E770FD12B468B94DD8FAE89F4C34BFE74D3847968BA128E46130
+                E997B51C4373F66862ACEFE2ED96B69D530AA010C8B7213E3A545B5852568B82
+                E65A76EDB8D37FE952C22E5D5372FA6C68FFE54BE32D3B5BAF8390D5E150A47E
+                6C74B0A6A8A4BC5E1898696B6D19B872E5CA9ABB1591F38773373535CD64245C
+                503E5F6D7151240A948C02CA3A90FE82B6ED5BFFB49AE0F95BD04BE5BC010303
+                03B475E3C67999A7AE0A14C56981D57328AB830455A65425AD2D5BFA63B1984E
+                476B624FC8790334DD84FEBEBEFBD69E30A94004FD4835B3026BFC8435422ADF
+                CEB6576E37376F98D575F69F78D6AA346091DE13B6EFDC352D08031244AD3216
+                6A49F8EB09CD945F05A7C2E18299783CEEE91F6656B5015A763A1A1B198C868B
+                CBEA0845725D3832B1B9B9E1819767C2AA37405B261D5515979435E88B14CA53
+                4357FBFAE69E547A8F231AA02D938E2A4DA1EA148A7043CB968B83B1982723AA
+                631AB05C3AC2D47CA514799579C257B1A96DDB40A4A868DE6B7B82631AA065A7
+                2350BE1AF3D1C3282A1595A082E148C9F8C6C646BD27B8F25F5297E3A8062C5A
+                9A8E0C15A895803528A00E4818FEA0FF5E5579F9F4F0F0B0279AE0C806684FA5
+                2313EBE3B7862AC3A5A51B10443AB4AE70B2B9B971C60B33C1B10DD09E494723
+                43654585914692A69281BC1BB1BD7B67A0B7D7D511D5D10DD0B2D3112A284392
+                EB1145D9A6E9FB57AE5DBEAC23AA6B9BE0F8063C938EC0A89242541884150A65
+                74DB8ED6EBD18A8A39B7EE098E6F80969D8E4CA0E883BBA23A3F00D5026528BF
+                B0687263E36BD30303175C7727D5150D58B4341DA9025CAF245665C0A8172027
+                1526C762B14B2BF2BBED4A72DD53115DC78FFE61109DF091799EE8D17DFDA3AA
+                20B3987C326897B88AAB66C0A2C57484E02B9520FA4DA10E9D3C7E78C87EDB55
+                5CFB5CD0A34462D807E9F76620FD416A766AC43ECC18638C31C618638C31C618
+                638C31C618638C31C61803F80F883EF30770247F720000000049454E44AE4260
+                82}
+              FileName = 'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\arrow_back.png'
+            end>
+          Align = Left
+          Margins.Top = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = imgVoltarClick
+          object FillRGBEffect1: TFillRGBEffect
+            Color = xFF060606
+          end
+        end
+      end
+      object layFormasPagamento: TLayout
+        Align = Bottom
+        Position.Y = 362.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 136.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object layDinehiroCartao: TLayout
+          Align = Top
+          Margins.Top = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object recDinheiro: TRectangle
+            Align = Left
+            Fill.Color = claWhite
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Size.Width = 140.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD6D6D6
+            XRadius = 14.000000000000000000
+            YRadius = 14.000000000000000000
+            OnClick = recDinheiroClick
+            object Layout8: TLayout
+              Align = Center
+              Size.Width = 79.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Label12: TLabel
+                Align = Bottom
+                StyledSettings = [Family, Style]
+                Position.Y = 24.000000000000000000
+                Size.Width = 79.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = xFF363636
+                TextSettings.HorzAlign = Center
+                Text = 'Dinheiro'
+                TabOrder = 2
+              end
+              object Image1: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      029149444154785EEDDC3D6B154114C6F1AB568A824404C54EC4429B8082E217
+                      50AC6CEC536A2508A21F42945469536A6BA5166225BE2022A285116B53C5C697
+                      4ECFEC1EC8E5DEC9EE2CBB37E7CCCEFF070F67175284FBB0B3B9039909000000
+                      000000000000166B8FCE3E8E4BCE49CE5777E57825F928D9ACEE0CDC907C92FC
+                      2B3CA184BB925D7350F24812FB654ACE5BC992A493AE4BD029C9467D891D1C93
+                      242F4B7B75A67AAE133B7BA233C93E9D29EE4BAED697687042F24B125ED2AD52
+                      97A0C392ADFA1289C2FBA0F5334B2D6059F2A1BE9CF353F252B25ADD95E3BAE6
+                      6875372FFC59FEBEBEECEF9A24F6E60FB92729D54349EC330909E5B44A7D099F
+                      D619B3AEB3446B3A634EEA6C945AC0019D313F7496E8ABCE98FD3A1B75FD3314
+                      03A30063391730FBD2CB124F80310A304601C6BC177046F25432BBDEC7D6FCD8
+                      CF4CC725CF055C907C965CAEEE46CA730145EC2D797F02462FA79770D8B9ED13
+                      97722A609428C0180518A3006314608C028C5180B19C0A88EDEFB4E5B5C4F517
+                      3ACF05BCD1D947F8F043096153CF25CF05DCD23984073ADDF1FE049C953CABEE
+                      FA71BBA3EAFD1DF045724512DBDB694B16727A098F120518A3006314608C028C
+                      5180310A30E6B980D8DE4E9764A1942760886FD30B514A01B775BA33F602C27E
+                      D24549D8D270C97301B1FD9DE9CC8AFD4CF8F087D8D65E98529620B728C01805
+                      18CBB980D9F53E4B3C01C628C0586A01BF75C684038A4AD57484C31F9D8D520B
+                      68FA97FC159D25BAA933E6BBCE46A92F2F8EAB9937C87135A905706053774907
+                      36A51E59F657724872A9BA439B3B9217F5E5B0C2BA16DB7B27DBE9B4F7D4F50B
+                      0CC756B65BE8B195DF2461297A5CDD61DA3BC911C9AE1D65CCD1C5757A1D5D3C
+                      C41E0A8777030000000000000000C0ABC9E43F5F0B8730FB83CAD20000000049
+                      454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\local_atm_24dp' +
+                      '_FILL0_wght200_GRAD200_opsz24.png'
+                  end>
+                Align = Client
+                HitTest = False
+                Size.Width = 79.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object recCartao: TRectangle
+            Align = Right
+            Fill.Color = claWhite
+            Margins.Right = 15.000000000000000000
+            Position.X = 197.000000000000000000
+            Size.Width = 140.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD6D6D6
+            XRadius = 14.000000000000000000
+            YRadius = 14.000000000000000000
+            OnClick = recCartaoClick
+            object Layout6: TLayout
+              Align = Center
+              TabOrder = 0
+              object Label9: TLabel
+                Align = Bottom
+                StyledSettings = [Family, Style]
+                Position.Y = 24.000000000000000000
+                Size.Width = 50.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = xFF363636
+                TextSettings.HorzAlign = Center
+                Text = 'Cart'#227'o'
+                TabOrder = 2
+              end
+              object Image3: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      029149444154785EEDDC3D6B154114C6F1AB568A824404C54EC4429B8082E217
+                      50AC6CEC536A2508A21F42945469536A6BA5166225BE2022A285116B53C5C697
+                      4ECFEC1EC8E5DEC9EE2CBB37E7CCCEFF070F67175284FBB0B3B9039909000000
+                      000000000000166B8FCE3E8E4BCE49CE5777E57825F928D9ACEE0CDC907C92FC
+                      2B3CA184BB925D7350F24812FB654ACE5BC992A493AE4BD029C9467D891D1C93
+                      242F4B7B75A67AAE133B7BA233C93E9D29EE4BAED697687042F24B125ED2AD52
+                      97A0C392ADFA1289C2FBA0F5334B2D6059F2A1BE9CF353F252B25ADD95E3BAE6
+                      6875372FFC59FEBEBEECEF9A24F6E60FB92729D54349EC330909E5B44A7D099F
+                      D619B3AEB3446B3A634EEA6C945AC0019D313F7496E8ABCE98FD3A1B75FD3314
+                      03A30063391730FBD2CB124F80310A304601C6BC177046F25432BBDEC7D6FCD8
+                      CF4CC725CF055C907C965CAEEE46CA730145EC2D797F02462FA79770D8B9ED13
+                      97722A609428C0180518A3006314608C028C5180B19C0A88EDEFB4E5B5C4F517
+                      3ACF05BCD1D947F8F043096153CF25CF05DCD23984073ADDF1FE049C953CABEE
+                      FA71BBA3EAFD1DF045724512DBDB694B16727A098F120518A3006314608C028C
+                      5180310A30E6B980D8DE4E9764A1942760886FD30B514A01B775BA33F602C27E
+                      D24549D8D270C97301B1FD9DE9CC8AFD4CF8F087D8D65E98529620B728C01805
+                      18CBB980D9F53E4B3C01C628C0586A01BF75C684038A4AD57484C31F9D8D520B
+                      68FA97FC159D25BAA933E6BBCE46A92F2F8EAB9937C87135A905706053774907
+                      36A51E59F657724872A9BA439B3B9217F5E5B0C2BA16DB7B27DBE9B4F7D4F50B
+                      0CC756B65BE8B195DF2461297A5CDD61DA3BC911C9AE1D65CCD1C5757A1D5D3C
+                      C41E0A8777030000000000000000C0ABC9E43F5F0B8730FB83CAD20000000049
+                      454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\local_atm_24dp' +
+                      '_FILL0_wght200_GRAD200_opsz24.png'
+                  end>
+                Align = Client
+                HitTest = False
+                Size.Width = 50.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+        end
+        object layCrediarioPix: TLayout
+          Align = Top
+          Margins.Top = 5.000000000000000000
+          Position.Y = 75.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object recCrediario: TRectangle
+            Align = Left
+            Fill.Color = claWhite
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Size.Width = 140.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD6D6D6
+            XRadius = 14.000000000000000000
+            YRadius = 14.000000000000000000
+            object Layout7: TLayout
+              Align = Center
+              Size.Width = 76.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Label11: TLabel
+                Align = Bottom
+                StyledSettings = [Family, Style]
+                Position.Y = 24.000000000000000000
+                Size.Width = 76.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = xFF363636
+                TextSettings.HorzAlign = Center
+                Text = 'Credi'#225'rio'
+                TabOrder = 2
+              end
+              object Image4: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      029149444154785EEDDC3D6B154114C6F1AB568A824404C54EC4429B8082E217
+                      50AC6CEC536A2508A21F42945469536A6BA5166225BE2022A285116B53C5C697
+                      4ECFEC1EC8E5DEC9EE2CBB37E7CCCEFF070F67175284FBB0B3B9039909000000
+                      000000000000166B8FCE3E8E4BCE49CE5777E57825F928D9ACEE0CDC907C92FC
+                      2B3CA184BB925D7350F24812FB654ACE5BC992A493AE4BD029C9467D891D1C93
+                      242F4B7B75A67AAE133B7BA233C93E9D29EE4BAED697687042F24B125ED2AD52
+                      97A0C392ADFA1289C2FBA0F5334B2D6059F2A1BE9CF353F252B25ADD95E3BAE6
+                      6875372FFC59FEBEBEECEF9A24F6E60FB92729D54349EC330909E5B44A7D099F
+                      D619B3AEB3446B3A634EEA6C945AC0019D313F7496E8ABCE98FD3A1B75FD3314
+                      03A30063391730FBD2CB124F80310A304601C6BC177046F25432BBDEC7D6FCD8
+                      CF4CC725CF055C907C965CAEEE46CA730145EC2D797F02462FA79770D8B9ED13
+                      97722A609428C0180518A3006314608C028C5180B19C0A88EDEFB4E5B5C4F517
+                      3ACF05BCD1D947F8F043096153CF25CF05DCD23984073ADDF1FE049C953CABEE
+                      FA71BBA3EAFD1DF045724512DBDB694B16727A098F120518A3006314608C028C
+                      5180310A30E6B980D8DE4E9764A1942760886FD30B514A01B775BA33F602C27E
+                      D24549D8D270C97301B1FD9DE9CC8AFD4CF8F087D8D65E98529620B728C01805
+                      18CBB980D9F53E4B3C01C628C0586A01BF75C684038A4AD57484C31F9D8D520B
+                      68FA97FC159D25BAA933E6BBCE46A92F2F8EAB9937C87135A905706053774907
+                      36A51E59F657724872A9BA439B3B9217F5E5B0C2BA16DB7B27DBE9B4F7D4F50B
+                      0CC756B65BE8B195DF2461297A5CDD61DA3BC911C9AE1D65CCD1C5757A1D5D3C
+                      C41E0A8777030000000000000000C0ABC9E43F5F0B8730FB83CAD20000000049
+                      454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\local_atm_24dp' +
+                      '_FILL0_wght200_GRAD200_opsz24.png'
+                  end>
+                Align = Client
+                HitTest = False
+                Size.Width = 76.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object recPix: TRectangle
+            Align = Right
+            Fill.Color = claWhite
+            Margins.Right = 15.000000000000000000
+            Position.X = 197.000000000000000000
+            Size.Width = 140.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFD6D6D6
+            XRadius = 14.000000000000000000
+            YRadius = 14.000000000000000000
+            OnClick = recPixClick
+            object Layout5: TLayout
+              Align = Center
+              TabOrder = 0
+              object Label7: TLabel
+                Align = Bottom
+                StyledSettings = [Family, Style]
+                Position.Y = 24.000000000000000000
+                Size.Width = 50.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = xFF363636
+                TextSettings.HorzAlign = Center
+                Text = 'Pix'
+                TabOrder = 2
+              end
+              object Image2: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      029149444154785EEDDC3D6B154114C6F1AB568A824404C54EC4429B8082E217
+                      50AC6CEC536A2508A21F42945469536A6BA5166225BE2022A285116B53C5C697
+                      4ECFEC1EC8E5DEC9EE2CBB37E7CCCEFF070F67175284FBB0B3B9039909000000
+                      000000000000166B8FCE3E8E4BCE49CE5777E57825F928D9ACEE0CDC907C92FC
+                      2B3CA184BB925D7350F24812FB654ACE5BC992A493AE4BD029C9467D891D1C93
+                      242F4B7B75A67AAE133B7BA233C93E9D29EE4BAED697687042F24B125ED2AD52
+                      97A0C392ADFA1289C2FBA0F5334B2D6059F2A1BE9CF353F252B25ADD95E3BAE6
+                      6875372FFC59FEBEBEECEF9A24F6E60FB92729D54349EC330909E5B44A7D099F
+                      D619B3AEB3446B3A634EEA6C945AC0019D313F7496E8ABCE98FD3A1B75FD3314
+                      03A30063391730FBD2CB124F80310A304601C6BC177046F25432BBDEC7D6FCD8
+                      CF4CC725CF055C907C965CAEEE46CA730145EC2D797F02462FA79770D8B9ED13
+                      97722A609428C0180518A3006314608C028C5180B19C0A88EDEFB4E5B5C4F517
+                      3ACF05BCD1D947F8F043096153CF25CF05DCD23984073ADDF1FE049C953CABEE
+                      FA71BBA3EAFD1DF045724512DBDB694B16727A098F120518A3006314608C028C
+                      5180310A30E6B980D8DE4E9764A1942760886FD30B514A01B775BA33F602C27E
+                      D24549D8D270C97301B1FD9DE9CC8AFD4CF8F087D8D65E98529620B728C01805
+                      18CBB980D9F53E4B3C01C628C0586A01BF75C684038A4AD57484C31F9D8D520B
+                      68FA97FC159D25BAA933E6BBCE46A92F2F8EAB9937C87135A905706053774907
+                      36A51E59F657724872A9BA439B3B9217F5E5B0C2BA16DB7B27DBE9B4F7D4F50B
+                      0CC756B65BE8B195DF2461297A5CDD61DA3BC911C9AE1D65CCD1C5757A1D5D3C
+                      C41E0A8777030000000000000000C0ABC9E43F5F0B8730FB83CAD20000000049
+                      454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\local_atm_24dp' +
+                      '_FILL0_wght200_GRAD200_opsz24.png'
+                  end>
+                Align = Client
+                HitTest = False
+                Size.Width = 50.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 322.000000000000000000
+        Size.Height = 282.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 14.000000000000000000
+        YRadius = 14.000000000000000000
+        object Layout2: TLayout
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object Label1: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 104.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.WordWrap = False
+            Text = 'Desconto na venda'
+            TabOrder = 2
+          end
+          object lblDescontoVenda: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 246.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = '- R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object Layout3: TLayout
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Label2: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 46.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.WordWrap = False
+            Text = 'Subtotal'
+            TabOrder = 2
+          end
+          object lblSubTotal: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 255.000000000000000000
+            Size.Width = 47.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object Layout4: TLayout
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Label6: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 28.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.WordWrap = False
+            Text = 'Total'
+            TabOrder = 2
+          end
+          object lblTotalResumo: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 253.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = xFF363636
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object ScrollBoxPagamento: TScrollBox
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Size.Width = 292.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          ShowScrollBars = False
+          Viewport.Width = 292.000000000000000000
+          Viewport.Height = 113.000000000000000000
+        end
+        object Line1: TLine
+          Align = Top
+          LineType = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 282.000000000000000000
+          Size.Height = 6.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFADADAD
+        end
+        object layTotalPago: TLayout
+          Align = Bottom
+          Position.X = 10.000000000000000000
+          Position.Y = 212.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label5: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 58.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.WordWrap = False
+            Text = 'Total pago'
+            TabOrder = 2
+          end
+          object lblTotalPago: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 253.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = xFF363636
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object layFaltaPagar: TLayout
+          Align = MostBottom
+          Position.X = 10.000000000000000000
+          Position.Y = 232.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label8: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 61.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFF363636
+            TextSettings.WordWrap = False
+            Text = 'Falta pagar'
+            TabOrder = 2
+          end
+          object lblFaltaPagar: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 253.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = xFF363636
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object layTroco: TLayout
+          Align = MostBottom
+          Position.X = 10.000000000000000000
+          Position.Y = 252.000000000000000000
+          Size.Width = 302.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label10: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 31.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFFE75050
+            TextSettings.WordWrap = False
+            Text = 'Troco'
+            TabOrder = 2
+          end
+          object lblTroco: TLabel
+            Align = Right
+            AutoSize = True
+            StyledSettings = [Family]
+            HitTest = True
+            Position.X = 253.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = xFFE75050
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'R$ 00,00'
+            TabOrder = 1
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.400000005960464500
+          ShadowColor = xFFC7C7C7
+        end
+        object Line2: TLine
+          Align = Bottom
+          LineType = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 282.000000000000000000
+          Size.Height = 3.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFADADAD
+        end
+      end
+      object btnFinalizar: TRectangle
+        Align = MostBottom
+        Enabled = False
+        Fill.Color = xFF439AF5
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 508.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        OnClick = btnFinalizarClick
+        object Label3: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 332.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Finalizar'
+          TabOrder = 1
+        end
+      end
+    end
+    inherited recDelete: TRectangle
+      Size.Width = 352.000000000000000000
+      Size.Height = 568.000000000000000000
+      inherited recBaseModalDelete: TRectangle
+        inherited layContentTitleModalDelete: TLayout
+          inherited lblDescricaoModalDelete: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited layContentButtonsModalDelete: TLayout
+          inherited lblBaseCancelar: TLabel
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Height = 40.000000000000000000
+          end
+        end
+      end
+    end
+    inline FramePagamentoTecladoDinheiro1: TFramePagamentoTecladoDinheiro
+      Align = Contents
+      Size.Width = 322.000000000000000000
+      Size.Height = 570.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited recBase: TRectangle
+        Size.Width = 322.000000000000000000
+        Size.Height = 570.000000000000000000
+        inherited recPrincipal: TRectangle
+          inherited layContentTecladoQuantidade: TLayout
+            inherited FrameComponentesTeclado1: TFrameComponentesTeclado
+              inherited layContentTeclado: TLayout
+                inherited lay000Apagar: TLayout
+                  inherited layApagar: TLayout
+                    inherited Image1: TImage
+                      MultiResBitmap.Height = 96
+                      MultiResBitmap.Width = 96
+                    end
+                  end
+                end
+              end
+            end
+            inherited layValoresQuantidade: TLayout
+              inherited lblValor: TLabel
+                TextSettings.Font.StyleExt = {00090000000000000004000000}
+              end
+            end
+            inherited Layout1: TLayout
+              inherited layPrimeiraLinhaValores: TLayout
+                inherited layDoisReais: TLayout
+                  inherited lblDoisReais: TLabel
+                    Size.Width = 34.000000000000000000
+                    Size.Height = 15.000000000000000000
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  end
+                end
+                inherited layDezReais: TLayout
+                  inherited lblDezReais: TLabel
+                    Size.Width = 41.000000000000000000
+                    Size.Height = 15.000000000000000000
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  end
+                end
+                inherited layCincoReais: TLayout
+                  inherited lblCincoReais: TLabel
+                    Size.Width = 34.000000000000000000
+                    Size.Height = 15.000000000000000000
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  end
+                end
+              end
+              inherited laySegundaLinha: TLayout
+                inherited layVinteReais: TLayout
+                  inherited lblVinteReais: TLabel
+                    Size.Width = 41.000000000000000000
+                    Size.Height = 15.000000000000000000
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  end
+                end
+                inherited layCinquentaReais: TLayout
+                  inherited lblCinquentaReais: TLabel
+                    Size.Width = 41.000000000000000000
+                    Size.Height = 15.000000000000000000
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  end
+                end
+              end
+              inherited layTerceiraLinha: TLayout
+                inherited lblCemReais: TLabel
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 15.000000000000000000
+                  TextSettings.Font.StyleExt = {00060000000000000004000000}
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    inline FramePagamentoTecladoPix1: TFramePagamentoTecladoPix
+      Align = Contents
+      Size.Width = 322.000000000000000000
+      Size.Height = 566.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited recBase: TRectangle
+        Size.Width = 322.000000000000000000
+        Size.Height = 566.000000000000000000
+        inherited recPrincipal: TRectangle
+          inherited layContentTecladoQuantidade: TLayout
+            inherited FrameComponentesTeclado1: TFrameComponentesTeclado
+              inherited layContentTeclado: TLayout
+                inherited lay000Apagar: TLayout
+                  inherited layApagar: TLayout
+                    inherited Image1: TImage
+                      MultiResBitmap.Height = 96
+                      MultiResBitmap.Width = 96
+                    end
+                  end
+                end
+              end
+            end
+            inherited layValoresQuantidade: TLayout
+              inherited lblValor: TLabel
+                TextSettings.Font.StyleExt = {00090000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+    inline FramePagamentoCartao1: TFramePagamentoCartao
+      Align = Contents
+      Size.Width = 328.000000000000000000
+      Size.Height = 568.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited recBase: TRectangle
+        Size.Width = 328.000000000000000000
+        Size.Height = 568.000000000000000000
+        inherited recPrincipal: TRectangle
+          inherited layContentTecladoQuantidade: TLayout
+            inherited layValoresQuantidade: TLayout
+              inherited lblValor: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+            inherited layClone: TLayout
+              inherited imgCartao: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      020549444154785EEDDC416A14411886E1BF3AE608EA0944508820EEF402B942
+                      88136416CECA9CC5DDCCA209A34956599B1364E722594408E4008A478874D94D
+                      7E11612A5595413E9DBCCFA6AB32218B7EE9740D1465000000000000000060E5
+                      05BF16DB19BF7D192D6CC5CE9E744D7C7ACFC27DFFE84E8A57F62DACC7B36876
+                      615D38FEB0373DF68F8A5405D8194FDEF597F7D7332CD2991D7C6CA7DB3ECD2A
+                      0ED0DFFC3E324ACDDB69D1BD6DFC7AA3D7E3C9BE0F51C8FF5B64652B8DDE4C36
+                      43639F7C8A2AF1D5BC9D9DF864A1FC13D0C44D1FA1D2B058F161523640FF883C
+                      F6212A0D2B451F266503C4ABF0CC87A8342CD37D98947D07E4563FA56FFB55B5
+                      ECFD295A05E1EF21801801C40820460031028811406CE9EF01B819DF03FE7104
+                      1023801801C40820460031028811408C0062041023801801C408204600310288
+                      B12F6849EC0BFACF11408C0062041023801801C40820460031028811408C0062
+                      041023801801C40820460031028811408C0062041023801801C4082096DDD333
+                      1A4DBE86757BE85354F861F1FB413B7BE0D385B24FC07028A90F51A9E9C2B90F
+                      93B201E270222C6E2534F6C58749F9774017AA8EE2C56FC1E2A10F93D6FC9A74
+                      76FAF972E3F98B47FDCB62C37F8432BBF37676E4E3A4E28DB51CDA51A774D372
+                      F132D4FFE0EEF50C29C3E1DD353BC68B7FF1178EAFFFD3B2C7D7030000000000
+                      0000805567F6137B5A76BF9C33DD470000000049454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\credit_card_24' +
+                      'dp_FILL0_wght400_GRAD0_opsz24.png'
+                  end>
+              end
+            end
+            inherited ScrollBox: TScrollBox
+              Viewport.Width = 262.000000000000000000
+              Viewport.Height = 219.000000000000000000
+            end
+          end
+        end
+      end
+    end
+    inline FramePagamentoCartaoOpcoesParcelamento1: TFramePagamentoCartaoOpcoesParcelamento
+      Align = Contents
+      Size.Width = 328.000000000000000000
+      Size.Height = 568.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited recBase: TRectangle
+        Size.Width = 328.000000000000000000
+        Size.Height = 568.000000000000000000
+        inherited recPrincipal: TRectangle
+          inherited layContentTecladoQuantidade: TLayout
+            inherited layCaption: TLayout
+              inherited lblCaption: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+            inherited ScrollBox: TVertScrollBox
+              Viewport.Width = 262.000000000000000000
+              Viewport.Height = 249.000000000000000000
+            end
+            inherited layClone: TLayout
+              inherited imgCartao: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      020549444154785EEDDC416A14411886E1BF3AE608EA0944508820EEF402B942
+                      88136416CECA9CC5DDCCA209A34956599B1364E722594408E4008A478874D94D
+                      7E11612A5595413E9DBCCFA6AB32218B7EE9740D1465000000000000000060E5
+                      05BF16DB19BF7D192D6CC5CE9E744D7C7ACFC27DFFE84E8A57F62DACC7B36876
+                      615D38FEB0373DF68F8A5405D8194FDEF597F7D7332CD2991D7C6CA7DB3ECD2A
+                      0ED0DFFC3E324ACDDB69D1BD6DFC7AA3D7E3C9BE0F51C8FF5B64652B8DDE4C36
+                      43639F7C8A2AF1D5BC9D9DF864A1FC13D0C44D1FA1D2B058F161523640FF883C
+                      F6212A0D2B451F266503C4ABF0CC87A8342CD37D98947D07E4563FA56FFB55B5
+                      ECFD295A05E1EF21801801C40820460031028811406CE9EF01B819DF03FE7104
+                      1023801801C40820460031028811408C0062041023801801C408204600310288
+                      B12F6849EC0BFACF11408C0062041023801801C40820460031028811408C0062
+                      041023801801C40820460031028811408C0062041023801801C4082096DDD333
+                      1A4DBE86757BE85354F861F1FB413B7BE0D385B24FC07028A90F51A9E9C2B90F
+                      93B201E270222C6E2534F6C58749F9774017AA8EE2C56FC1E2A10F93D6FC9A74
+                      76FAF972E3F98B47FDCB62C37F8432BBF37676E4E3A4E28DB51CDA51A774D372
+                      F132D4FFE0EEF50C29C3E1DD353BC68B7FF1178EAFFFD3B2C7D7030000000000
+                      0000805567F6137B5A76BF9C33DD470000000049454E44AE426082}
+                    FileName = 
+                      'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\credit_card_24' +
+                      'dp_FILL0_wght400_GRAD0_opsz24.png'
+                  end>
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

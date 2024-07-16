@@ -1,0 +1,29 @@
+inherited ViewEditText: TViewEditText
+  Size.Height = 71.000000000000000000
+  inherited recBase: TRectangle
+    Margins.Top = 20.000000000000000000
+    Size.Height = 43.000000000000000000
+    inherited Edit: TEdit
+      Size.Height = 39.000000000000000000
+      OnChangeTracking = EditChangeTracking
+    end
+    object recContentLabel: TRectangle
+      HitTest = False
+      Position.X = 5.000000000000000000
+      Position.Y = -22.000000000000000000
+      Size.Width = 93.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblText: TLabel
+        Align = Contents
+        Size.Width = 93.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = '...'
+        TabOrder = 0
+      end
+    end
+  end
+end

@@ -1,0 +1,32 @@
+object FrameClienteLista: TFrameClienteLista
+  OnTap = FrameTap
+  HitTest = False
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 756.000000000000000000
+  Size.Height = 76.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object recBase: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    HitTest = False
+    Padding.Left = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Sides = [Bottom]
+    Size.Width = 756.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFDFDFDF
+    Stroke.Thickness = 1.500000000000000000
+    object lblDescricao: TLabel
+      Align = Client
+      Locked = True
+      Margins.Left = 6.000000000000000000
+      Size.Width = 730.000000000000000000
+      Size.Height = 72.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblDescricao'
+      TabOrder = 1
+    end
+  end
+end

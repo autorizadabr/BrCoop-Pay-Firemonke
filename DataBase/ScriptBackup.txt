@@ -1,0 +1,5 @@
+cd C:\Program Files\PostgreSQL\16\bin
+pg_dump -U postgres -p 5432 -h 127.0.0.1 coop_pay > C:\AutorizadaBr\Joabe\coop_pay\DataBase\Backup\coop_pay.sql
+
+cd C:\Program Files\PostgreSQL\16\bin
+psql -U postgres -p 5432 -h 127.0.0.1 -d coop_pay < C:\AutorizadaBr\Joabe\coop_pay\DataBase\Backup\coop_pay.sql

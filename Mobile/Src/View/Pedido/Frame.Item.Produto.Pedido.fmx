@@ -1,0 +1,96 @@
+object FrameItemProdutoPedido: TFrameItemProdutoPedido
+  OnTap = FrameTap
+  Padding.Left = 2.000000000000000000
+  Padding.Top = 2.000000000000000000
+  Padding.Right = 2.000000000000000000
+  Padding.Bottom = 2.000000000000000000
+  Size.Width = 456.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object layPrincipal: TLayout
+    Touch.InteractiveGestures = [LongTap]
+    Align = Client
+    Size.Width = 452.000000000000000000
+    Size.Height = 66.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recBase: TRectangle
+      Align = Client
+      Fill.Kind = None
+      HitTest = False
+      Padding.Right = 10.000000000000000000
+      Sides = [Bottom]
+      Size.Width = 452.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFB4B4B4
+      Stroke.Thickness = 1.500000000000000000
+      object imgProduto: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Left
+        HitTest = False
+        Size.Width = 81.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblDescricao: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 10.000000000000000000
+        Size.Width = 261.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        Text = 'NOME DO PRODUTO'
+        TabOrder = 1
+      end
+      object Layout1: TLayout
+        Align = Right
+        Position.X = 352.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lblValor: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 10.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 66.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Text = 'R$ 1,00 UN'
+          TabOrder = 1
+        end
+      end
+      object recQuantidade: TRoundRect
+        Fill.Color = xFF439AF5
+        HitTest = False
+        Position.X = 72.000000000000000000
+        Position.Y = -2.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object lblQuantidade: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Locked = True
+          Size.Width = 33.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = '0'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

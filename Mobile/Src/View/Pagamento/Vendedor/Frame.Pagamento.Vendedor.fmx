@@ -1,0 +1,88 @@
+object FramePagamentoVendedor: TFramePagamentoVendedor
+  Align = Contents
+  Size.Width = 320.000000000000000000
+  Size.Height = 580.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x787B7B7B
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 580.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object recPrincipal: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Size.Width = 290.000000000000000000
+      Size.Height = 415.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object layButtons: TLayout
+        Align = Bottom
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 355.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblCancelar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 167.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CANCELAR'
+          TabOrder = 0
+          OnClick = lblCancelarClick
+        end
+      end
+      object layValorFaltaReceber: TLayout
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblCaption: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 262.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.VertAlign = Trailing
+          Text = 'Selecione o atendente'
+          TabOrder = 0
+        end
+      end
+      object VertScrollBox: TVertScrollBox
+        Align = Client
+        Margins.Top = 20.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 272.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 262.000000000000000000
+        Viewport.Height = 272.000000000000000000
+      end
+    end
+  end
+end

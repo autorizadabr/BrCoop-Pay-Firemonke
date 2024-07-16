@@ -1,0 +1,43 @@
+object ViewButtonBase: TViewButtonBase
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 222.000000000000000000
+  Size.Height = 40.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF1F41BB
+    Locked = True
+    HitTest = False
+    Size.Width = 214.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Locked = True
+      Size.Width = 214.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      TextSettings.Trimming = None
+      Text = 'BUTTON'
+      TabOrder = 0
+    end
+  end
+  object ShadowEffect1: TShadowEffect
+    Distance = 3.000000000000000000
+    Direction = 45.000000000000000000
+    Softness = 0.300000011920929000
+    Opacity = 0.600000023841857900
+    ShadowColor = xFFCBD6FF
+  end
+end

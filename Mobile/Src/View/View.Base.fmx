@@ -1,0 +1,173 @@
+object ViewBase: TViewBase
+  Left = 0
+  Top = 0
+  Caption = 'Base'
+  ClientHeight = 572
+  ClientWidth = 340
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnKeyUp = FormKeyUp
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object layView: TLayout
+    Align = Contents
+    Size.Width = 340.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recPrincipal: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Padding.Bottom = 32.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      object Circle5: TCircle
+        Fill.Color = x00FFFFFF
+        Position.X = -12.000000000000000000
+        Position.Y = -128.000000000000000000
+        Size.Width = 509.000000000000000000
+        Size.Height = 433.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF8F9FF
+        Stroke.Thickness = 2.000000000000000000
+        object Circle4: TCircle
+          Fill.Color = xFFF8F9FF
+          Locked = True
+          Position.X = 104.000000000000000000
+          Size.Width = 401.000000000000000000
+          Size.Height = 353.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+    object recDelete: TRectangle
+      Align = Contents
+      Fill.Color = x787B7B7B
+      Locked = True
+      Size.Width = 340.000000000000000000
+      Size.Height = 570.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Visible = False
+      object recBaseModalDelete: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Locked = True
+        Padding.Left = 14.000000000000000000
+        Padding.Right = 14.000000000000000000
+        Size.Width = 288.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFDDDDDD
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object layTitleModalDelete: TLayout
+          Align = Top
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 14.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 246.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object imgCloseModal: TImage
+            MultiResBitmap = <
+              item
+                Width = 18
+                Height = 18
+                PNG = {
+                  89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+                  57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  00A249444154384FA594D1098430104453821D680796620B7660299670A55C09
+                  57CA95A033818125449DC507EF23421E66032960833F38739164875F3872C1C8
+                  01FF3013FB40EEA30B3F70332399588CF0470658C9C42E23C2893D46C45DCC8E
+                  885E2C1D1131164D450463AF23241E87B633B36867D2CECCA237D838332B7677
+                  3B76CCB9E2C798131197313E056E4474637C4F32111163F51999E00A3311C1BD
+                  8894720241E567074F1EDA120000000049454E44AE426082}
+                FileName = 
+                  'C:\WkTechnology\Fabrica-Adilson-Mobile\Src\Asserts\Icones\Close_' +
+                  'Black.png'
+              end>
+            Align = Right
+            Position.X = 228.000000000000000000
+            Size.Width = 18.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object layContentTitleModalDelete: TLayout
+          Align = Top
+          Position.X = 14.000000000000000000
+          Position.Y = 38.000000000000000000
+          Size.Width = 260.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblDescricaoModalDelete: TLabel
+            Align = Client
+            StyledSettings = [Family, FontColor]
+            Size.Width = 260.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            TextSettings.Trimming = None
+            Text = 'Deseja deletar registro ?'
+            TabOrder = 0
+          end
+        end
+        object layContentButtonsModalDelete: TLayout
+          Align = Center
+          Size.Width = 247.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lblBaseDeletar: TLabel
+            OnTap = lblBaseDeletarTap
+            Align = Right
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Margins.Right = 40.000000000000000000
+            Position.X = 147.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = xFFF84B4B
+            Text = 'Deletar'
+            TabOrder = 1
+            OnClick = lblBaseDeletarClick
+          end
+          object lblBaseCancelar: TLabel
+            OnTap = lblBaseCancelarTap
+            Align = Left
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Margins.Left = 40.000000000000000000
+            Position.X = 40.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = xFF828282
+            TextSettings.HorzAlign = Trailing
+            Text = 'Cancelar'
+            TabOrder = 0
+            OnClick = lblBaseCancelarClick
+          end
+        end
+      end
+    end
+  end
+end

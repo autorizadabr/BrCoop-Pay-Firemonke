@@ -1,0 +1,54 @@
+object ViewComboBoxBaseItem: TViewComboBoxBaseItem
+  OnTap = FrameTap
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 320.000000000000000000
+  Size.Height = 42.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object recBase: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Locked = True
+    HitTest = False
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Size.Width = 312.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFD7D7D7
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object CircleSelecao: TCircle
+      Align = Left
+      Locked = True
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 35.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lblDescription: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Locked = True
+      Size.Width = 265.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.Trimming = None
+      Text = 'Item 01'
+      TabOrder = 2
+    end
+  end
+end

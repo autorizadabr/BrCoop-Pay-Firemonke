@@ -1,0 +1,182 @@
+object FrameComponentesTecladoValorUnitario: TFrameComponentesTecladoValorUnitario
+  Align = Contents
+  Size.Width = 320.000000000000000000
+  Size.Height = 528.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x787B7B7B
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 528.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object recPrincipal: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Top = 14.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Size.Width = 290.000000000000000000
+      Size.Height = 420.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 53.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label4: TLabel
+          Align = Client
+          Size.Width = 262.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Valor do produto'
+          TabOrder = 0
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Position.X = 14.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblValorUnitarioProduto: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 136.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'R$ 0,00'
+          TabOrder = 0
+        end
+      end
+      object Layout3: TLayout
+        Align = Bottom
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 360.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Label5: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 84.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CANCELAR'
+          TabOrder = 1
+          OnClick = Label5Click
+        end
+        object Label6: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 179.000000000000000000
+          Size.Width = 83.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CONFIRMAR'
+          TabOrder = 0
+          OnClick = Label6Click
+        end
+      end
+      inline FrameComponentesTeclado1: TFrameComponentesTeclado
+        Align = Client
+        Size.Width = 262.000000000000000000
+        Size.Height = 236.000000000000000000
+        Size.PlatformDefault = False
+        inherited layContentTeclado: TLayout
+          Size.Width = 262.000000000000000000
+          Size.Height = 236.000000000000000000
+          inherited lay456: TLayout
+            Size.Width = 262.000000000000000000
+          end
+          inherited lay000Apagar: TLayout
+            Size.Width = 262.000000000000000000
+            inherited layApagar: TLayout
+              inherited Image1: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+          end
+          inherited lay789: TLayout
+            Size.Width = 262.000000000000000000
+          end
+          inherited lay123: TLayout
+            Size.Width = 262.000000000000000000
+          end
+        end
+      end
+      object lblNomeProduto: TLabel
+        Align = Top
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 14.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        Text = 'lblNomeProduto'
+        TabOrder = 2
+        object lblValor: TLabel
+          Align = Right
+          AutoSize = True
+          StyledSettings = [Family]
+          Position.X = 221.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF2C2C2C
+          TextSettings.HorzAlign = Trailing
+          TextSettings.WordWrap = False
+          Text = 'R$ 0,00'
+          TabOrder = 0
+        end
+      end
+      object lblValorUnitario: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Position.X = 14.000000000000000000
+        Position.Y = 31.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.FontColor = xFF686868
+        Text = 'lblNomeProduto'
+        TabOrder = 0
+      end
+    end
+  end
+end

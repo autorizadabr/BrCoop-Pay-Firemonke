@@ -1,0 +1,86 @@
+object ViewEditDate: TViewEditDate
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 296.000000000000000000
+  Size.Height = 46.000000000000000000
+  Size.PlatformDefault = False
+  object recBase: TRectangle
+    Align = Client
+    ClipChildren = True
+    Fill.Color = claWhite
+    Locked = True
+    HitTest = False
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claDarkgray
+    XRadius = 8.000000000000000000
+    YRadius = 8.000000000000000000
+    object EditDate: TDateEdit
+      Date = 45233.000000000000000000
+      OnChange = EditDateChange
+      OnClosePicker = EditDateClosePicker
+      Align = Client
+      CanFocus = False
+      Locked = True
+      Margins.Left = -100.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object lblDate: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Locked = True
+      Margins.Left = 10.000000000000000000
+      Size.Width = 274.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = '00/00/0000'
+      TabOrder = 2
+      object ImgDate: TImage
+        MultiResBitmap.Height = 20
+        MultiResBitmap.Width = 20
+        MultiResBitmap = <
+          item
+            Width = 20
+            Height = 20
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000140000001408060000008D891D
+              0D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              012E49444154384FED94314EC33014869FED1C801BD0031489918D545CA03748
+              940845CAC451D84904B9013D011DBBC10DDAB953193C25B1797E3C2A12B09AB4
+              0B039F64C5BFE3F727EF257ED027CBB2891B2CBDF8F649BEEE699AE6C50D965E
+              7CFB045F214DD35008718D0B774E5B807BBAE1A1B76F5114C51BAF7FBEBE69DB
+              B59B1F8BB1765696E53270A2AEEB5049CCDEDA87D6DA15ED188852EA0AE36E71
+              7AEE74A78606404B29B7638631467338D1FF2853ACE3CDC871C1B104D5304992
+              18537EA49523C11AC658C38A6AB8C7DA274C7BC96A1098620842C42CA163E8CC
+              DC53580E02B313EA9BE18F1FFB54FE0D4FE7EF1B764E0AB6A26794D486467089
+              26738C9D630B5B90611445674110BC4A210E76EADFC063B7C1663BABAA6A4386
+              5FE4794E2D682C5AEB7734DB01007C0041D27926EAFB30410000000049454E44
+              AE426082}
+            FileName = 
+              'C:\WkTechnology\Fabrica-Adilson-Mobile\Src\Asserts\Icones\Date.p' +
+              'ng'
+          end>
+        Align = Right
+        Locked = True
+        HitTest = False
+        Position.X = 238.000000000000000000
+        Size.Width = 36.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        WrapMode = Center
+      end
+    end
+  end
+end

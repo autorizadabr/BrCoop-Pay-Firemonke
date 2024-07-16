@@ -1,0 +1,146 @@
+object ViewEditSenha: TViewEditSenha
+  Align = Client
+  Size.Width = 393.000000000000000000
+  Size.Height = 50.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object layEditCodico: TLayout
+    Align = Client
+    Size.Width = 393.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    inline EdtCodigo1: TViewEditCodigo
+      Tag = 1
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    inline EdtCodigo5: TViewEditCodigo
+      Tag = 5
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 224.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    inline EdtCodigo3: TViewEditCodigo
+      Tag = 3
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 112.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    inline EdtCodigo2: TViewEditCodigo
+      Tag = 2
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 56.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    inline EdtCodigo6: TViewEditCodigo
+      Tag = 6
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 280.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    inline EdtCodigo4: TViewEditCodigo
+      Tag = 4
+      Align = Left
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 168.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = EdtCodigo1Click
+      inherited recBase: TRectangle
+        Size.Height = 42.000000000000000000
+        inherited lblNumber: TLabel
+          Size.Height = 38.000000000000000000
+        end
+      end
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      KeyboardType = NumberPad
+      ReturnKeyType = Go
+      ImeMode = imClose
+      Position.X = 352.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = Edit1ChangeTracking
+      OnKeyUp = Edit1KeyUp
+    end
+  end
+end

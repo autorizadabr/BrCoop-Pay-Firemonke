@@ -1,0 +1,286 @@
+object FrameComponentesTeclado: TFrameComponentesTeclado
+  Size.Width = 176.000000000000000000
+  Size.Height = 168.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object layContentTeclado: TLayout
+    Align = Client
+    Size.Width = 176.000000000000000000
+    Size.Height = 168.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lay456: TLayout
+      Align = Top
+      Position.Y = 41.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object lay4: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbl04: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '4'
+          TabOrder = 0
+        end
+      end
+      object lay5: TLayout
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lbl05: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '5'
+          TabOrder = 0
+        end
+      end
+      object lay6: TLayout
+        Align = Left
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lbl06: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '6'
+          TabOrder = 0
+        end
+      end
+    end
+    object lay000Apagar: TLayout
+      Align = Top
+      Position.Y = 123.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lay00: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbl00: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '00'
+          TabOrder = 0
+        end
+      end
+      object lay0: TLayout
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lbl0: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '0'
+          TabOrder = 0
+        end
+      end
+      object layApagar: TLayout
+        Align = Left
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Image1: TImage
+          MultiResBitmap.Height = 96
+          MultiResBitmap.Width = 96
+          MultiResBitmap = <
+            item
+              Width = 96
+              Height = 96
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                03AC49444154785EED9CCFCB0D5118C75F142544122921A1FCC88FFC5850283F
+                23D9108A58505848B11022F217287644D9B0B0C28294B0C186484A84526241B2
+                A0C4F731F3D4E9EDB9EFBDF7CC39F39E73EFF7539FCEB99B33CF3CCF9DB967E6
+                9E991E42082184104208218410420821841042082184C46140D9F62733E016B8
+                064E82E3608A7C878FE013F80CDE80D9B313FECDD487700ECC9603D0DAB1DC3C
+                05B3E318B4762657A7C06CD80CAD9DC8D99BD08B41655B1713E06538FAFFA7CE
+                616AD9DE2FDB96A97B167405EE28BA0DF909EF409969A4C444B8ABE89AC851B0
+                A1E8A6C93E681DBEAEFBE148982A8BA015B7F81926CB3CF80B5A81AB63600EDC
+                8556FCE234D81603CB363667E1E0A26BB20A7E29BAC923F3FF468C2FDB96A9A3
+                0027E0BAA26B7209CAB78A4440BED9D6A1AAFE80B921175ED6BE88CB615BC43C
+                0286C37345B7210BCAB66B89590039EF4F2FBA2667E0EBA2EB855CD05525C418
+                49B20D5A87A8FA025641AFA6AB24D0778CA0A7A0184C865670AE43A12F9A38D5
+                A70855C648BE00B7A1159CBA07FAD23B716A3B09AC3A46D2053808ADC0D45BD0
+                974689535B49608831922DC0426805E5EA4BB3C4A97D2530C41842B205780BAD
+                A0D4B5B00A9BE06F688DED6A253054F285240B701E5A01A9176008D643B95B6A
+                6DC3D54D64C8E40BC9156023B482513FC090AC86DFA0B52D574968E8E40B4915
+                6014B402719D0943B302CACD3B6B7BEDDA4EF285A40AD0D7AD59F1288CC552F8
+                095ADB6DD576932F245380C3D00A427D0063B318BE87D6F69BE9937C218902CC
+                825600AE23601DCC876FA01543237D932F2451808FD00A40DD0EEB64367C05AD
+                587A5B25F942D002F8DE0D4D61496357234BF2AC6F802B4F419191198E1584CA
+                1FE11A90245B81A89C8646662CB40271E5855864B6422B1895B7226A40961C5A
+                01A9BC19179921F02BB48252793B3A32725EB68272F5254402431521D90208A7
+                A11598CABF246BE029B48253F9A77C646425B4159C2B97A544A6D903785C9855
+                03D7A115A42ABF1755A8927CC5678C6C0A202BE49ACDD9FB5A3B9A2A410B1073
+                71EE3BB8B7E836447EB0BB9AD80F685C85B264A511C3E0C5A2DB9DC42E80701C
+                BE2CBA26BBE1CAA24B6221F770AC73A66B573EA45727F2C08615B46BD73DA65A
+                E77FBBB2AD7BB0D94C810F6A476409FC03AD6F50EECAF4340B8E406B0772D6FB
+                651DFDC53568ED48AE66F5BA1AA5538A701266CB21D86C955DAA067965590A2B
+                DC64DA2933A365653B17A688BEB4EF317C0E3BE2A57D84104208218410420821
+                84104208218410424887D2D3F30F65C7374FA80029070000000049454E44AE42
+                6082}
+              FileName = 
+                'C:\AutorizadaBr\Joabe\coop_pay\Mobile\Src\Asserts\backspace_24dp' +
+                '_FILL0_wght200_GRAD200_opsz24.png'
+            end>
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = Image1Click
+        end
+      end
+    end
+    object lay789: TLayout
+      Align = Top
+      Position.Y = 82.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lay7: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbl07: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '7'
+          TabOrder = 0
+        end
+      end
+      object lay8: TLayout
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lbl08: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '8'
+          TabOrder = 0
+        end
+      end
+      object lay9: TLayout
+        Align = Left
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lbl09: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '9'
+          TabOrder = 0
+        end
+      end
+    end
+    object lay123: TLayout
+      Align = Top
+      Size.Width = 176.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lay1: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbl01: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '1'
+          TabOrder = 0
+        end
+      end
+      object lay2: TLayout
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lbl02: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '2'
+          TabOrder = 0
+        end
+      end
+      object lay3: TLayout
+        Align = Left
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lbl03: TLabel
+          Align = Center
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '3'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end

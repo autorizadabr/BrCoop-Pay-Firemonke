@@ -1,0 +1,318 @@
+object FramePagamentoTecladoDinheiro: TFramePagamentoTecladoDinheiro
+  Align = Contents
+  Size.Width = 320.000000000000000000
+  Size.Height = 629.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object recBase: TRectangle
+    Align = Contents
+    Fill.Color = x787B7B7B
+    Locked = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 629.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object recPrincipal: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Locked = True
+      Padding.Left = 14.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 14.000000000000000000
+      Size.Width = 290.000000000000000000
+      Size.Height = 556.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDDDDDD
+      XRadius = 25.000000000000000000
+      YRadius = 25.000000000000000000
+      object layButtons: TLayout
+        Align = Bottom
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 496.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblCancelar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 84.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CANCELAR'
+          TabOrder = 1
+          OnClick = lblCancelarClick
+        end
+        object lblConfirmar: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          HitTest = True
+          Margins.Bottom = 28.000000000000000000
+          Position.X = 179.000000000000000000
+          Size.Width = 83.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF439AF5
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Leading
+          Text = 'CONFIRMAR'
+          TabOrder = 0
+          OnClick = lblConfirmarClick
+        end
+      end
+      object layContentTecladoQuantidade: TLayout
+        Align = Client
+        Size.Width = 262.000000000000000000
+        Size.Height = 433.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        inline FrameComponentesTeclado1: TFrameComponentesTeclado
+          Align = Client
+          Size.Width = 262.000000000000000000
+          Size.Height = 288.000000000000000000
+          Size.PlatformDefault = False
+          inherited layContentTeclado: TLayout
+            Size.Width = 262.000000000000000000
+            Size.Height = 288.000000000000000000
+            inherited lay456: TLayout
+              Size.Width = 262.000000000000000000
+            end
+            inherited lay000Apagar: TLayout
+              Size.Width = 262.000000000000000000
+              inherited layApagar: TLayout
+                inherited Image1: TImage
+                  MultiResBitmap.Height = 96
+                  MultiResBitmap.Width = 96
+                end
+              end
+            end
+            inherited lay789: TLayout
+              Size.Width = 262.000000000000000000
+            end
+            inherited lay123: TLayout
+              Size.Width = 262.000000000000000000
+            end
+          end
+        end
+        object layValoresQuantidade: TLayout
+          Align = Top
+          Size.Width = 262.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblValor: TLabel
+            Align = Client
+            StyledSettings = [Family, FontColor]
+            Size.Width = 262.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.Font.StyleExt = {00090000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'R$ 1,00'
+            TabOrder = 0
+          end
+        end
+        object Layout1: TLayout
+          Align = Top
+          Padding.Left = 10.000000000000000000
+          Padding.Right = 10.000000000000000000
+          Position.Y = 33.000000000000000000
+          Size.Width = 262.000000000000000000
+          Size.Height = 112.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object layPrimeiraLinhaValores: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 242.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object layDoisReais: TLayout
+              Align = Left
+              Size.Width = 87.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lblDoisReais: TLabel
+                Align = Center
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                HitTest = True
+                Size.Width = 35.000000000000000000
+                Size.Height = 16.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = '+ 2,00'
+                TabOrder = 0
+                OnClick = lblDoisReaisClick
+              end
+            end
+            object layDezReais: TLayout
+              Align = Left
+              Position.X = 174.000000000000000000
+              Size.Width = 87.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lblDezReais: TLabel
+                Align = Center
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                HitTest = True
+                Size.Width = 40.000000000000000000
+                Size.Height = 16.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = '+ 10,00'
+                TabOrder = 0
+                OnClick = lblDezReaisClick
+              end
+            end
+            object layCincoReais: TLayout
+              Align = Left
+              Position.X = 87.000000000000000000
+              Size.Width = 87.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lblCincoReais: TLabel
+                Align = Center
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                HitTest = True
+                Size.Width = 35.000000000000000000
+                Size.Height = 16.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = '+ 5,00'
+                TabOrder = 0
+                OnClick = lblCincoReaisClick
+              end
+            end
+          end
+          object laySegundaLinha: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 45.000000000000000000
+            Size.Width = 242.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object layVinteReais: TLayout
+              Align = Left
+              Size.Width = 128.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lblVinteReais: TLabel
+                Align = Center
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                HitTest = True
+                Size.Width = 42.000000000000000000
+                Size.Height = 16.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = '+ 20,00'
+                TabOrder = 0
+                OnClick = lblVinteReaisClick
+              end
+            end
+            object layCinquentaReais: TLayout
+              Align = Right
+              Position.X = 108.000000000000000000
+              Size.Width = 134.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lblCinquentaReais: TLabel
+                Align = Center
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                HitTest = True
+                Size.Width = 42.000000000000000000
+                Size.Height = 16.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = '+ 50,00'
+                TabOrder = 0
+                OnClick = lblCinquentaReaisClick
+              end
+            end
+          end
+          object layTerceiraLinha: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 242.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lblCemReais: TLabel
+              Align = Center
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              HitTest = True
+              Size.Width = 47.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              TextSettings.HorzAlign = Center
+              TextSettings.WordWrap = False
+              Text = '+ 100,00'
+              TabOrder = 0
+              OnClick = lblCemReaisClick
+            end
+          end
+        end
+      end
+      object layValorFaltaReceber: TLayout
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblFaltaPagar: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 262.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.FontColor = xFF686868
+          TextSettings.HorzAlign = Center
+          Text = 'Falta pagar R$ 0,00'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

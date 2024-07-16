@@ -1,0 +1,3247 @@
+{
+	"info": {
+		"_postman_id": "5a47a9fb-ef48-4a63-a8bb-7166bda0e2fa",
+		"name": "Coop-Pay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20716916"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user",
+							"host": [
+								"{{base_url}}user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/company",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"company"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users Email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/email/meuemail",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"email",
+								"meuemail"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gabriel\",\r\n    \"email\":\"Gabriel.tggreewrewste\",\r\n    \"password\":\"123\",\r\n    \"active\":false,\r\n    \"type_user\":\"Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user",
+							"host": [
+								"{{base_url}}user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}category",
+							"host": [
+								"{{base_url}}category"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}category/04F8F1B0522D4FBD94ABFA08EF621DFB",
+							"host": [
+								"{{base_url}}category"
+							],
+							"path": [
+								"04F8F1B0522D4FBD94ABFA08EF621DFB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Categoria 4",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}category",
+							"host": [
+								"{{base_url}}category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "CategoryName",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}category/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}category"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer/04F8F1B0522D4FBD94ABFA08EF621DFB",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"04F8F1B0522D4FBD94ABFA08EF621DFB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpfCnpj\": \"10685685688\",\r\n    \"ie\": \"12868606\",\r\n    \"typeOfTaxpayer\": 2,\r\n    \"name\": \" Hhchch\",\r\n    \"fantasy\": \"Hchchchx\",\r\n    \"publicPlace\": \"Rua Parecis\",\r\n    \"number\": \"Hh\",\r\n    \"complement\": \"Zona 06\",\r\n    \"neighborhood\": \"Zona 06\",\r\n    \"cityId\": 4105508,\r\n    \"phone\": \"68006066028\",\r\n    \"email\": \"g hchcjvkvihobk\",\r\n    \"isActive\": true,\r\n    \"zipCode\": \"87205040\",\r\n    \"companyId\": \"D7F63CA8D7414A12AA76D7B4BC6C5084\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}customer",
+							"host": [
+								"{{base_url}}customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "CategoryName",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}customer/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Payment",
+			"item": [
+				{
+					"name": "Get Order Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order-payment",
+							"host": [
+								"{{base_url}}order-payment"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order-payment/A76CAAEC99494D8B8C71EDB883FDF3AF",
+							"host": [
+								"{{base_url}}order-payment"
+							],
+							"path": [
+								"A76CAAEC99494D8B8C71EDB883FDF3AF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order-payment/A76CAAEC99494D8B8C71EDB883FDF3AF",
+							"host": [
+								"{{base_url}}order-payment"
+							],
+							"path": [
+								"A76CAAEC99494D8B8C71EDB883FDF3AF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"orderId\":\"2\",\r\n   \"paymentId\":\"947BC631EF85427C81F41D30CD965899\",\r\n   \"nsu\":\"\",\r\n   \"autorizationCode\":\"\",\r\n   \"flag\":\"\",\r\n   \"amountPaid\":0.01\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}order-payment",
+							"host": [
+								"{{base_url}}order-payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "CategoryName",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}order-payment/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}order-payment"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Type Of Payments",
+			"item": [
+				{
+					"name": "Get Type Of Payments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}type-of-payment/pos-payment",
+							"host": [
+								"{{base_url}}type-of-payment"
+							],
+							"path": [
+								"pos-payment"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Type Of Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}type-of-payment/CB88BAF4F40B4F529213B3A0C0F65E87",
+							"host": [
+								"{{base_url}}type-of-payment"
+							],
+							"path": [
+								"CB88BAF4F40B4F529213B3A0C0F65E87"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpfCnpj\": \"10685685688\",\r\n    \"ie\": \"12868606\",\r\n    \"typeOfTaxpayer\": 2,\r\n    \"name\": \" Hhchch\",\r\n    \"fantasy\": \"Hchchchx\",\r\n    \"publicPlace\": \"Rua Parecis\",\r\n    \"number\": \"Hh\",\r\n    \"complement\": \"Zona 06\",\r\n    \"neighborhood\": \"Zona 06\",\r\n    \"cityId\": 4105508,\r\n    \"phone\": \"68006066028\",\r\n    \"email\": \"g hchcjvkvihobk\",\r\n    \"isActive\": true,\r\n    \"zipCode\": \"87205040\",\r\n    \"companyId\": \"D7F63CA8D7414A12AA76D7B4BC6C5084\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}customer",
+							"host": [
+								"{{base_url}}customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "CategoryName",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}customer/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order",
+							"host": [
+								"{{base_url}}order"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orders Large Volume",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order/large-volume/04-07-2024 04:00:01",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"large-volume",
+								"04-07-2024 04:00:01"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order/9C893A01D6C744D8A2CF47BACC7606B0/items",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"9C893A01D6C744D8A2CF47BACC7606B0",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyId\": \"D7F63CA8D7414A12AA76D7B4BC6C5084\",\r\n    \"userId\": \"E429D59845764538AC5282282C5CDFB2\",\r\n    \"customerId\": \"746090CA24184E5EA634E8C7240E48D2\",\r\n    \"typeOrder\": 1,\r\n    \"cpfCnpj\": \"ultimo\",\r\n    \"addition\": 0,\r\n    \"discount\": 0,\r\n    \"troco\": 0,\r\n    \"subtotal\": 0,\r\n    \"total\": 0,\r\n    \"createdAt\": \"2024-02-02T00:00:00.000Z\",\r\n    \"updatedAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}order",
+							"host": [
+								"{{base_url}}order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Large Volume",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n      \"companyId\":\"BD2E90192EAD4E11B75E056FCF240ADE\",\r\n      \"userId\":\"1A814C5794494A02A3ADF5BD964D7A72\",\r\n      \"customerId\":\"B52E80C129034E6EAD348F382D880F6C\",\r\n      \"typeOrder\":\"1\",\r\n      \"cpfCnpj\":\"\",\r\n      \"discount\":0,\r\n      \"troco\":0,\r\n      \"subtotal\":2,\r\n      \"total\":2,\r\n      \"status\":\"FECHADO\",\r\n      \"mesa\":0,\r\n      \"comanda\":0,\r\n      \"order_items\":[\r\n         {\r\n            \"productId\":\"\",\r\n            \"amount\":\"0\",\r\n            \"discount_value\":\"0\",\r\n            \"discount_percentage\":0,\r\n            \"observation\":\"\",\r\n            \"cfop\":\"\",\r\n            \"origin\":\"\",\r\n            \"csosnCst\":\"\",\r\n            \"cstPis\":\"\",\r\n            \"ppis\":0,\r\n            \"vpis\":0,\r\n            \"cstCofins\":\"\",\r\n            \"pcofins\":0,\r\n            \"vcofins\":0,\r\n            \"subtotal\":0,\r\n            \"total\":0\r\n         }\r\n      ],\r\n      \"orderPayments\":[\r\n         {\r\n            \"orderId\":\"1\",\r\n            \"paymentId\":\"947BC631EF85427C81F41D30CD965899\",\r\n            \"nsu\":\"\",\r\n            \"autorizationCode\":\"\",\r\n            \"flag\":\"\",\r\n            \"amountPaid\":2,\r\n            \"createdAt\":\"03\\/07\\/2024 22:07:50\",\r\n            \"updatedAt\":\"03\\/07\\/2024 22:07:50\"\r\n         }\r\n      ]\r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}order/large-volume",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"large-volume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "CategoryName",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eedfdce-4e6b-4c70-a996-1640e279dfb7"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}order/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Itens",
+			"item": [
+				{
+					"name": "Get Order Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order-items/138F570188A349B7B702F6D5F6CCF059",
+							"host": [
+								"{{base_url}}order-items"
+							],
+							"path": [
+								"138F570188A349B7B702F6D5F6CCF059"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}order-items/7AF4AC66DEF64EE0AB72A16FF2A7A6D7",
+							"host": [
+								"{{base_url}}order-items"
+							],
+							"path": [
+								"7AF4AC66DEF64EE0AB72A16FF2A7A6D7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order-Items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numberItem\": 1,\r\n    \"orderId\": \"9C893A01D6C744D8A2CF47BACC7606B0\",\r\n    \"productId\": \"00D92CE6BBD04EEC92DF031031F29109\",\r\n    \"amount\": 0,\r\n    \"additionApportionment\": 0,\r\n    \"discountApportionment\": 0,\r\n    \"cfop\": null,\r\n    \"origin\": null,\r\n    \"csosnCst\": null,\r\n    \"cstPis\": null,\r\n    \"ppis\": 0,\r\n    \"vpis\": 0,\r\n    \"cstCofins\": null,\r\n    \"pcofins\": 0,\r\n    \"vcofins\": 0,\r\n    \"subtotal\": 0,\r\n    \"total\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}order-items",
+							"host": [
+								"{{base_url}}order-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order Items",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"orderId\":\"39ACB880DA964071AAD87F41C79C0C8B\",\r\n   \"productId\":\"3187C6E13F064A48BA0F18ABD5EFF6FE\",\r\n   \"amount\":\"1\",\r\n   \"discountValue\":\"0,5\",\r\n   \"discountPercentage\":25,\r\n   \"observation\":\"\",\r\n   \"cfop\":\"6108\",\r\n   \"origin\":\"100\",\r\n   \"csosnCst\":\"103\",\r\n   \"cstPis\":\"\",\r\n   \"ppis\":0,\r\n   \"vpis\":0,\r\n   \"cstCofins\":\"56\",\r\n   \"pcofins\":0,\r\n   \"vcofins\":0,\r\n   \"subtotal\":2,\r\n   \"total\":1.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}order/63F7D4BA94E64AA3805E352789A91BC3",
+							"host": [
+								"{{base_url}}order"
+							],
+							"path": [
+								"63F7D4BA94E64AA3805E352789A91BC3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unit",
+			"item": [
+				{
+					"name": "Get Unities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}unit",
+							"host": [
+								"{{base_url}}unit"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}unit/04F8F1B0522D4FBD94ABFA08EF621DFB",
+							"host": [
+								"{{base_url}}unit"
+							],
+							"path": [
+								"04F8F1B0522D4FBD94ABFA08EF621DFB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Unit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}unit/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}unit"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Unit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Categoria 2\",\r\n    \"sigra\":\"sigra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}unit",
+							"host": [
+								"{{base_url}}unit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Unit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}unit/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}unit"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tax Model",
+			"item": [
+				{
+					"name": "Get Tax Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}tax-model",
+							"host": [
+								"{{base_url}}tax-model"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tax Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}tax-model/04F8F1B0522D4FBD94ABFA08EF621DFB",
+							"host": [
+								"{{base_url}}tax-model"
+							],
+							"path": [
+								"04F8F1B0522D4FBD94ABFA08EF621DFB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tax Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}tax-model/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}tax-model"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Tax Model",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Categoria 2\",\r\n    \"sigra\":\"sigra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}tax-model",
+							"host": [
+								"{{base_url}}tax-model"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tax Model",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}tax-model/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}tax-model"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CNPJ",
+			"item": [
+				{
+					"name": "Get CNPJ",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "0103ff9c-7bfb-4b1c-b4c6-ad454ae942b4-85938284-5ba4-4899-afd4-4d7c60019369",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.cnpja.com/office/04368131000100",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cnpja",
+								"com"
+							],
+							"path": [
+								"office",
+								"04368131000100"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CNPJ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}cnpj/04368131000100",
+							"host": [
+								"{{base_url}}cnpj"
+							],
+							"path": [
+								"04368131000100"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CEP",
+			"item": [
+				{
+					"name": "Get CEP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}cep/87207310",
+							"host": [
+								"{{base_url}}cep"
+							],
+							"path": [
+								"87207310"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "New Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"user\":{\r\n      \"email\":\"gabriel.unipar.br\",\r\n      \"password\":\"123456\"\r\n   },\r\n   \"company\":{\r\n      \"cpfCnpj\":\"gabriel.unipar.br\",\r\n      \"ie\":\"5151\",\r\n      \"ieSt\":\"\",\r\n      \"im\":\"\",\r\n      \"name\":\"GABRIEL VIEIRA DOS SANTOS\",\r\n      \"fantasy\":\"GABRIEL VIEIRA DOS SANTOS\",\r\n      \"publicPlace\":\"Rua Flores\",\r\n      \"number\":\"662\",\r\n      \"complement\":\"\",\r\n      \"neighborhood\":\"Zona 04\",\r\n      \"cityId\":4105508,\r\n      \"zipCode\":\"87205040\",\r\n      \"phone\":\"(44)4444-4845\",\r\n      \"crt\":2,\r\n      \"email\":\"gabriel.unipar.br\"\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}account/new",
+							"host": [
+								"{{base_url}}account"
+							],
+							"path": [
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Release Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyId\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}account/release-company",
+							"host": [
+								"{{base_url}}account"
+							],
+							"path": [
+								"release-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\":\"GABRIEL.DEVELOPER.SANTOS@GMAIL.COM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}account/verify",
+							"host": [
+								"{{base_url}}account"
+							],
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify CNPJ IE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\":\"GABRIEL.DEVELOPER.SANTOS@GMAIL.COM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}account/verify/cnpj/15/61-21/ie/123",
+							"host": [
+								"{{base_url}}account"
+							],
+							"path": [
+								"verify",
+								"cnpj",
+								"15",
+								"61-21",
+								"ie",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "Get Cities",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}city",
+							"host": [
+								"{{base_url}}city"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "emp",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "gabr",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}city/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}city"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete City",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}city/7588F4D976BF4F21A44F0B3876EDF146",
+							"host": [
+								"{{base_url}}city"
+							],
+							"path": [
+								"7588F4D976BF4F21A44F0B3876EDF146"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create City",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"id\": 1,\r\n    \"name\": \"Maringá 3\",\r\n    \"stateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}city",
+							"host": [
+								"{{base_url}}city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update City",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission Role",
+			"item": [
+				{
+					"name": "Get Permission Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}permission-role",
+							"host": [
+								"{{base_url}}permission-role"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "12",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Permission Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionId\": \"67DF7ED13D9A4E3E980C7059C29C023D\",\r\n    \"roleId\": \"39A9844111CB4775BD6CCEC8966A53KO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}permission-role",
+							"host": [
+								"{{base_url}}permission-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get Roles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}role",
+							"host": [
+								"{{base_url}}role"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}role/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}role"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}role/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}role"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gabriel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}role",
+							"host": [
+								"{{base_url}}role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gabriel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}role/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}role"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Get Companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company",
+							"host": [
+								"{{base_url}}company"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "gabriel",
+									"disabled": true
+								},
+								{
+									"key": "fantasy",
+									"value": "univer",
+									"disabled": true
+								},
+								{
+									"key": "cpfCnpj",
+									"value": "10602865999",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Companies by User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company/user/4E52rgrFCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"user",
+								"4E52rgrFCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gabriel\",\r\n    \"email\":\"Gabriel.tggreewrewste\",\r\n    \"password\":\"123\",\r\n    \"active\":false,\r\n    \"type_user\":\"Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}company",
+							"host": [
+								"{{base_url}}company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}company/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "gabriel",
+									"disabled": true
+								},
+								{
+									"key": "fantasy",
+									"value": "univer",
+									"disabled": true
+								},
+								{
+									"key": "cpfCnpj",
+									"value": "10602865999",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Custormer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer/8BBAF4AE32014E3DBFE141691B90B565",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"8BBAF4AE32014E3DBFE141691B90B565"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}customer/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpfCnpj\": \"106106106106\",\r\n    \"ie\": \"56145151\",\r\n    \"typeOfTaxpayer\": 1,\r\n    \"name\": \"Gabriel\",\r\n    \"fantasy\": \"Teste\",\r\n    \"publicPlace\": \"Teste\",\r\n    \"number\": \"123\",\r\n    \"complement\": \"Sem\",\r\n    \"neighborhood\": \"Centro\",\r\n    \"cityId\": 4105508,\r\n    \"phone\": \"1234565469\",\r\n    \"email\": \"123456\",\r\n    \"isActive\": true,\r\n    \"zipCode\": \"87205040\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}customer",
+							"host": [
+								"{{base_url}}customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{            \r\n    \"cpfCnpj\": \"106106106106\",\r\n    \"ie\": \"56145151\",\r\n    \"typeOfTaxpayer\": 1,\r\n    \"name\": \"Marcos\",\r\n    \"fantasy\": \"Teste\",\r\n    \"publicPlace\": \"Teste\",\r\n    \"number\": \"123\",\r\n    \"complement\": \"Sem\",\r\n    \"neighborhood\": \"Centro\",\r\n    \"cityId\": 4105508,\r\n    \"phone\": \"1234565469\",\r\n    \"email\": \"123456\",\r\n    \"isActive\": true,\r\n    \"zipCode\": \"87205040\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}customer/8BBAF4AE32014E3DBFE141691B90B565",
+							"host": [
+								"{{base_url}}customer"
+							],
+							"path": [
+								"8BBAF4AE32014E3DBFE141691B90B565"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}product",
+							"host": [
+								"{{base_url}}product"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "gabriel",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}product/81AB16FE6BC54778B7F0A3760DC74D5B",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"81AB16FE6BC54778B7F0A3760DC74D5B"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}product/category",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}product/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}product",
+							"host": [
+								"{{base_url}}product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{            \r\n    \"cpfCnpj\": \"106106106106\",\r\n    \"ie\": \"56145151\",\r\n    \"typeOfTaxpayer\": 1,\r\n    \"name\": \"Marcos\",\r\n    \"fantasy\": \"Teste\",\r\n    \"publicPlace\": \"Teste\",\r\n    \"number\": \"123\",\r\n    \"complement\": \"Sem\",\r\n    \"neighborhood\": \"Centro\",\r\n    \"cityId\": 4105508,\r\n    \"phone\": \"1234565469\",\r\n    \"email\": \"123456\",\r\n    \"isActive\": true,\r\n    \"zipCode\": \"87205040\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}product/8BBAF4AE32014E3DBFE141691B90B565",
+							"host": [
+								"{{base_url}}product"
+							],
+							"path": [
+								"8BBAF4AE32014E3DBFE141691B90B565"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company User Role",
+			"item": [
+				{
+					"name": "Get Companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company-user-role",
+							"host": [
+								"{{base_url}}company-user-role"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "15",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company by User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}company/user/4E52rgrFCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"user",
+								"4E52rgrFCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/4E52FCBF89354C57B7CD77967EA89BA7",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"4E52FCBF89354C57B7CD77967EA89BA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Company User Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"92CA299531FA4BD480C33AD8B4792F87\",\r\n    \"companyId\":\"517F935639094B0CB09B6B78E93B8ADC\",\r\n    \"roleId\":\"39A9844111CB4775BD6CCEC8966A53KO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}company-user-role",
+							"host": [
+								"{{base_url}}company-user-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel Email\",\r\n    \"email\": \"12efdef3456\",\r\n    \"password\":\"123456\",\r\n    \"active\": true,\r\n    \"typeUser\": \"U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}company/w4184F21EAC834B69B048A3269EC5B4B6",
+							"host": [
+								"{{base_url}}company"
+							],
+							"path": [
+								"w4184F21EAC834B69B048A3269EC5B4B6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permissions",
+			"item": [
+				{
+					"name": "Get Permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}permission",
+							"host": [
+								"{{base_url}}permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Permission by User and Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}permission/user/DEA0A92BDF6D4F4F92BF8AF23EDCA4C3/compnany/AD66992AD93343CEAE58AF5F8FC17137?page=1&limit=15",
+							"host": [
+								"{{base_url}}permission"
+							],
+							"path": [
+								"user",
+								"DEA0A92BDF6D4F4F92BF8AF23EDCA4C3",
+								"compnany",
+								"AD66992AD93343CEAE58AF5F8FC17137"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Permission",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"company-user-role.update\",\r\n    \"description\":\"Permite alterar registro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}permission",
+							"host": [
+								"{{base_url}}permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Permission",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gravar\",\r\n    \"description\": \"Permite gravar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}permission/q",
+							"host": [
+								"{{base_url}}permission"
+							],
+							"path": [
+								"q"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"cooppay@autorizadabr.com\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}authentication/login",
+							"host": [
+								"{{base_url}}authentication"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUser\":\"06FC0568E06C438CB92064B39C22A588\",\r\n    \"idCompany\":\"8A719E0C76DD43A6966753B458E8E2E0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}authentication/refresh-token",
+							"host": [
+								"{{base_url}}authentication"
+							],
+							"path": [
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gabriel\",\r\n    \"email\":\"gabriel.developer.santos@gmail.com\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}authentication/register",
+							"host": [
+								"{{base_url}}authentication"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"email\":\"gabriel.developer.santos@gmail.com\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}authentication/reset-password",
+							"host": [
+								"{{base_url}}authentication"
+							],
+							"path": [
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"email\":\"gabriel.developer.santos@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}authentication/update-password",
+							"host": [
+								"{{base_url}}authentication"
+							],
+							"path": [
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:9000/",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTYzMzM2MDJ9.bne2qLklChCcUPh14xlfwVn7TW76tN48XG_J06Mhhtg",
+			"type": "string"
+		}
+	]
+}

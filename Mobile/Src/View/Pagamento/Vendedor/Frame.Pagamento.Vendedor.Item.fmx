@@ -1,0 +1,56 @@
+object FramePagamentoVendedorItem: TFramePagamentoVendedorItem
+  OnTap = FrameTap
+  Size.Width = 413.000000000000000000
+  Size.Height = 50.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object CircleInicial: TCircle
+    Align = Left
+    Fill.Color = xFFCAE3FB
+    HitTest = False
+    Margins.Top = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.Y = 2.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblInicial: TLabel
+      Align = Center
+      StyledSettings = [Family, Style, FontColor]
+      Locked = True
+      Size.Width = 20.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'A'
+      TabOrder = 1
+    end
+  end
+  object lblNome: TLabel
+    Align = Client
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 364.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'lblNome'
+    TabOrder = 1
+  end
+  object Line: TLine
+    Align = Bottom
+    HitTest = False
+    LineType = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 3.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFADADAD
+  end
+end

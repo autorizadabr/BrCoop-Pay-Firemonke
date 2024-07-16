@@ -1,0 +1,75 @@
+inherited ViewBaseCrud: TViewBaseCrud
+  Caption = 'ViewBase1'
+  DesignerMasterStyle = 3
+  inherited layView: TLayout
+    inherited recPrincipal: TRectangle
+      Padding.Left = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Size.Height = 545.000000000000000000
+      inline edtPesquisa: TViewEditPesquisa
+        Align = Top
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Margins.Top = -22.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = -22.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        inherited recBase: TRectangle
+          Size.Width = 292.000000000000000000
+          inherited Edit: TEdit
+            Size.Width = 218.000000000000000000
+            Size.Height = 32.000000000000000000
+            TextPrompt = 'Buscar Nome / Email'
+          end
+          inherited imgPesquisa: TImage
+            OnTap = edtPesquisaimgPesquisaTap
+            MultiResBitmap.Height = 30
+            MultiResBitmap.Width = 30
+            OnClick = edtPesquisaimgPesquisaClick
+          end
+          inherited imgClear: TImage
+            OnTap = edtPesquisaimgClearTap
+            MultiResBitmap.Height = 30
+            MultiResBitmap.Width = 30
+            Position.X = 265.000000000000000000
+            OnClick = edtPesquisaimgClearClick
+          end
+        end
+      end
+      inline ViewListVertical: TViewListVertical
+        Align = Client
+        Size.Width = 300.000000000000000000
+        Size.Height = 489.000000000000000000
+        Size.PlatformDefault = False
+        inherited ScrollBox: TVertScrollBox
+          Size.Width = 300.000000000000000000
+          Size.Height = 489.000000000000000000
+          Viewport.Width = 300.000000000000000000
+          Viewport.Height = 489.000000000000000000
+        end
+      end
+    end
+    inherited recDelete: TRectangle
+      OnTap = nil
+      OnClick = nil
+      inherited recBaseModalDelete: TRectangle
+        inherited layTitleModalDelete: TLayout
+          inherited imgCloseModal: TImage
+            OnTap = nil
+            OnClick = nil
+          end
+        end
+        inherited layContentTitleModalDelete: TLayout
+          inherited lblDescricaoModalDelete: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end
